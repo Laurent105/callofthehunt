@@ -26,10 +26,37 @@ html a:hover {
 }
 body h1,
 html h1 {
-  font-size: 40px !important;
+  font-size: 42px;
+  text-align: center;
+  color: #AD0000;
+}
+body h2,
+html h2 {
+  font-size: 38px;
+  text-align: center;
+  color: #AD0000;
 }
 body h3,
 html h3 {
+  font-size: 36px;
+  text-align: center;
+  color: #AD0000;
+}
+body h4,
+html h4 {
+  font-size: 34px;
+  text-align: center;
+  color: #AD0000;
+}
+body h5,
+html h5 {
+  font-size: 32px;
+  text-align: center;
+  color: #AD0000;
+}
+body h6,
+html h6 {
+  font-size: 30px;
   text-align: center;
   color: #AD0000;
 }
@@ -185,8 +212,12 @@ html h3 {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+.season h2 {
+  text-align: left;
+}
 .season h3 {
   text-align: left;
+  color: white;
 }
 .season .body-image {
   background-image: url(img/body.png);
@@ -276,7 +307,6 @@ html h3 {
   padding-left: 300px;
   padding-right: 300px;
   padding-bottom: 100px;
-  font-size: 20px;
 }
 .moose-main h2 {
   color: #AD0000;
@@ -321,7 +351,6 @@ html h3 {
   padding-left: 300px;
   padding-right: 300px;
   padding-bottom: 100px;
-  font-size: 20px;
 }
 .about-main h2 {
   color: #AD0000;
@@ -334,5 +363,173 @@ html h3 {
   padding-bottom: 50px;
 }
 .about-header h1 {
+  color: #AD0000;
+}
+.thankyou-main {
+  background-color: #dddede;
+  background-position: center bottom;
+  background-repeat: repeat-y;
+  margin-bottom: -5%;
+  margin-top: 0px;
+  border-width: 0px;
+  border-color: #eae9e9;
+  border-style: solid;
+  background-image: url(img/bgb.png);
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-bottom: 100px;
+}
+.thankyou-main h2 {
+  color: #AD0000;
+}
+.thankyou-main p {
+  color: black;
+}
+.thankyou-header {
+  padding-top: 250px;
+  padding-bottom: 250px;
+}
+.thankyou-header h1 {
+  color: #AD0000;
+}
+.blog-main {
+  background-color: #dddede;
+  background-position: center bottom;
+  background-repeat: repeat-y;
+  margin-bottom: -5%;
+  margin-top: 0px;
+  border-width: 0px;
+  border-color: #eae9e9;
+  border-style: solid;
+  background-image: url(img/bgb.png);
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-bottom: 100px;
+}
+.blog-main h2 {
+  color: #AD0000;
+}
+.blog-main p {
+  color: black;
+}
+.blog-header {
+  padding-top: 250px;
+  padding-bottom: 250px;
+}
+.blog-header h1 {
+  color: #AD0000;
+}
+.delivery-main {
+  background-color: #dddede;
+  background-position: center bottom;
+  background-repeat: repeat-y;
+  margin-bottom: -5%;
+  margin-top: 0px;
+  border-width: 0px;
+  border-color: #eae9e9;
+  border-style: solid;
+  background-image: url(img/bgb.png);
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-bottom: 100px;
+}
+.delivery-main h2 {
+  color: #AD0000;
+}
+.delivery-main p {
+  color: black;
+}
+.delivery-header {
+  padding-top: 250px;
+  padding-bottom: 250px;
+}
+.delivery-header h1 {
+  color: #AD0000;
+}
+.map-main {
+  background-color: #dddede;
+  background-position: center bottom;
+  background-repeat: repeat-y;
+  margin-bottom: -5%;
+  margin-top: 0px;
+  border-width: 0px;
+  border-color: #eae9e9;
+  border-style: solid;
+  background-image: url(img/bgb.png);
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-bottom: 100px;
+}
+.map-main h2 {
+  color: #AD0000;
+}
+.map-main p {
+  color: black;
+}
+.map-header {
+  padding-top: 250px;
+  padding-bottom: 250px;
+}
+.map-header h1 {
+  color: #AD0000;
+}
+.press-kit-main {
+  background-color: #dddede;
+  background-position: center bottom;
+  background-repeat: repeat-y;
+  margin-bottom: -5%;
+  margin-top: 0px;
+  border-width: 0px;
+  border-color: #eae9e9;
+  border-style: solid;
+  background-image: url(img/bgb.png);
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-bottom: 100px;
+}
+.press-kit-main h2 {
+  color: #AD0000;
+}
+.press-kit-main p {
+  color: black;
+}
+.press-kit-header {
+  padding-top: 250px;
+  padding-bottom: 250px;
+}
+.press-kit-header h1 {
+  color: #AD0000;
+}
+.privacy-policy-main {
+  background-color: #dddede;
+  background-position: center bottom;
+  background-repeat: repeat-y;
+  margin-bottom: -5%;
+  margin-top: 0px;
+  border-width: 0px;
+  border-color: #eae9e9;
+  border-style: solid;
+  background-image: url(img/bgb.png);
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-bottom: 100px;
+}
+.privacy-policy-main h1 {
+  text-align: center;
+}
+.privacy-policy-main p {
+  color: black;
+}
+.privacy-policy-main li {
+  color: black;
+}
+.privacy-policy-main h3 {
+  text-align: left;
+}
+.privacy-policy-header {
+  padding-top: 250px;
+  padding-bottom: 250px;
+}
+.privacy-policy-header h1 {
   color: #AD0000;
 }
