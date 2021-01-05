@@ -1,0 +1,265 @@
+@font-face {
+  font-family: 'Futura PT';
+  src: url('Futura/FuturaPT-Medium.eot');
+  src: local('Futura PT Medium'), local('FuturaPT-Medium'), url('Futura/FuturaPT-Medium.eot?#iefix') format('embedded-opentype'), url('Futura/FuturaPT-Medium.woff') format('woff'), url('Futura/FuturaPT-Medium.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+body,
+html {
+  background-color: #060606;
+  color: #f1f2f2 !important;
+  width: 100%;
+  height: 100%;
+  font-weight: 400;
+  font-size: 24px;
+  font-family: Futura PT !important;
+}
+body a,
+html a {
+  text-decoration: none;
+  color: none;
+}
+body a:hover,
+html a:hover {
+  color: #AD0000;
+}
+body h1,
+html h1 {
+  font-size: 40px !important;
+}
+body h3,
+html h3 {
+  text-align: center;
+  color: #AD0000;
+}
+.header {
+  color: #f1f2f2 !important;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0px;
+  font-style: normal;
+  background-color: black;
+}
+.header a:hover {
+  color: #AD0000 !important;
+}
+.header .login-to-account {
+  float: right;
+  background-image: url(img/Button_blood.png);
+  background-repeat: no-repeat;
+  background-position: -5px 10px;
+  background-size: 100%;
+  width: 200px;
+}
+.container-fluid {
+  color: #f1f2f2 !important;
+}
+.navbar {
+  height: 96px;
+}
+.navbar-brand img {
+  height: 56px;
+  float: left;
+  padding-left: 300px;
+}
+.navbar-right {
+  float: right;
+  padding-right: 300px;
+}
+.navbar-light {
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0px;
+  font-style: normal;
+}
+.hero {
+  background-image: url(img/hero_background.jpg);
+  background-color: #0d0d0d;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 4% 30px 0px;
+  margin-bottom: 2%;
+  margin-top: 0px;
+  background-size: cover;
+  z-index: 1;
+  overflow: hidden;
+  position: relative;
+  height: calc(100vh - 0px);
+}
+.hero .col {
+  height: 120%;
+}
+.hero .row {
+  display: flex;
+  align-items: center;
+}
+.hero .p {
+  display: flex;
+  margin-bottom: 200px;
+  align-items: center;
+}
+.hero-text {
+  padding-right: 210px;
+}
+.buy-button {
+  display: inline;
+  float: left;
+  background-image: url(img/Button_blood.png);
+  background-repeat: no-repeat;
+  background-position: 0px 10px;
+  background-size: 100%;
+  width: 320px;
+  height: 80px;
+  font-size: 32px!important;
+  padding-left: 100px;
+  padding-top: 15px;
+  color: white;
+}
+.buy-button:hover {
+  color: white;
+  filter: alpha(opacity=40);
+}
+.packshot-hero-image {
+  height: 600px;
+  width: 600px;
+}
+.moose-img {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0);
+  background-position: center center;
+  background-repeat: repeat-x;
+  border-width: 0px;
+  border-color: #eae9e9;
+  border-style: solid;
+  height: 400px;
+  margin: -320px 0 -40px 0 !important;
+  background-size: 1400px;
+  z-index: 10;
+  background-image: url(img/mvone.png);
+}
+.moose-img .col {
+  height: 500px;
+}
+.packshot {
+  background-color: #dddede;
+  background-position: center top;
+  background-repeat: repeat-y;
+  padding: 2% 30px;
+  margin-bottom: 0px;
+  margin-top: -100px;
+  border-width: 0px;
+  border-color: #eae9e9;
+  border-style: solid;
+  background-image: url(img/bgb.png);
+  padding-right: 300px;
+  padding-left: 300px;
+  margin-left: 0;
+  margin-right: 0;
+  position: relative;
+}
+.packshot p {
+  color: black;
+}
+.packshot img {
+  max-width: 700px;
+  float: left;
+}
+.season {
+  background-color: #161616;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 3% 30px 2%;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  border-width: 0px;
+  border-color: #eae9e9;
+  border-style: solid;
+  background-size: cover;
+  background-image: url(img/bgw.png);
+}
+.season img {
+  vertical-align: top;
+  max-height: 200px;
+  max-width: 240px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.season h3 {
+  text-align: left;
+}
+.season .body-image {
+  background-image: url(img/body.png);
+}
+.crowdfunding {
+  text-align: center;
+  background-color: #dddede;
+  background-position: center bottom;
+  background-repeat: repeat-y;
+  padding: 0px 30px 5%;
+  margin-bottom: -5%;
+  margin-top: 0px;
+  border-width: 0px;
+  border-color: #eae9e9;
+  border-style: solid;
+  background-image: url(img/bgb.png);
+}
+.crowdfunding h1 {
+  color: #AD0000;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.crowdfunding img {
+  max-height: 140px;
+}
+.crowdfunding p {
+  color: black;
+}
+.mc-field-group input {
+  border: 2px solid #AD0000;
+  border-radius: 2px;
+}
+.clear {
+  display: table-cell;
+}
+.clear .button {
+  border: 2px solid #AD0000;
+  width: 200px;
+}
+.forest {
+  background-image: url(img/footer_trees.png);
+  background-position: center top;
+  background-repeat: repeat-x;
+  padding: 0px 0px 164px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  background-size: 441px;
+  position: relative;
+}
+.footer {
+  font-size: 18px;
+  background-color: #1c1918;
+  background-position: center top;
+  background-repeat: repeat-x;
+  padding-top: 40px;
+  padding-right: 0px;
+  padding-bottom: 40px;
+  padding-left: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  border-width: 0px 0px 0px 0px;
+  border-color: #eae9e9;
+  border-style: solid;
+  position: relative;
+}
+.footer .fa {
+  color: #686868;
+  text-decoration: none;
+  font-size: 24px;
+}
+.footer a {
+  color: #686868;
+}
+.footer p {
+  color: #686868;
+}
