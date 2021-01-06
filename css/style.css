@@ -114,9 +114,6 @@ html h6 {
   position: relative;
   height: calc(100vh - 0px);
 }
-.hero .col {
-  height: 120%;
-}
 .hero .row {
   display: flex;
   align-items: center;
@@ -179,10 +176,6 @@ html h6 {
   border-color: #eae9e9;
   border-style: solid;
   background-image: url(../img/bgb.png);
-  padding-right: 300px;
-  padding-left: 300px;
-  margin-left: 0;
-  margin-right: 0;
   position: relative;
 }
 .packshot p {
@@ -238,7 +231,6 @@ html h6 {
 .crowdfunding h1 {
   color: #AD0000;
   padding-top: 50px;
-  padding-bottom: 50px;
 }
 .crowdfunding img {
   max-height: 140px;
@@ -273,14 +265,7 @@ html h6 {
   background-position: center top;
   background-repeat: repeat-x;
   padding-top: 40px;
-  padding-right: 0px;
   padding-bottom: 40px;
-  padding-left: 0px;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  border-width: 0px 0px 0px 0px;
-  border-color: #eae9e9;
-  border-style: solid;
   position: relative;
 }
 .footer .fa {
