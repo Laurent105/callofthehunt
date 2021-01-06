@@ -1,9 +1,19 @@
 body {
-  background-image: url(/img/bgb.png)!important;
+  background-color: #dddede;
+  background-image: url(../img/bgb.png);
 }
-html:not(.avada-has-site-width-percent) #main, #main, .layout-wide-mode #wrapper, .layout-wide-mode #main {
-  background-color: unset;
-  background: unset;
+
+.symbols-main {
+  margin-bottom: -5%;
+  margin-top: 0px;
+  border-width: 0px;
+  border-color: none;
+  border-style: none;
+}
+
+.symbols-header {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .wrong {
@@ -16,19 +26,23 @@ html:not(.avada-has-site-width-percent) #main, #main, .layout-wide-mode #wrapper
 
 @keyframes bg-wrong {
   50% {
-    background: #c40000;
+    background-color: #c40000;
+    background-image: url(../img/bgb.png);
   }
 }
 
 @keyframes bg-correct {
   50% {
-    background: #000000;
+    background-color: #000000;
+    background-image: url(../img/bgb.png);
   }
 }
  
 .symbols {
   max-width: 45%;
   margin: 0 auto;
+  height: 100%;
+  padding-bottom: 12%;
 }
 
 @media (max-width: 1280px) {
@@ -63,7 +77,7 @@ html:not(.avada-has-site-width-percent) #main, #main, .layout-wide-mode #wrapper
 }
 
 .symbol {
-  background-image: url('/img/symbols.png');
+  background-image: url(../img/symbols.png);
   background-size: 2400%;
   background-repeat: no-repeat;
   cursor: pointer;
