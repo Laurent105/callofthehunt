@@ -1,8 +1,11 @@
 @font-face {
   font-family: 'Futura PT';
-  src: url('Futura/FuturaPT-Medium.eot');
-  src: local('Futura PT Medium'), local('FuturaPT-Medium'), url('Futura/FuturaPT-Medium.eot?#iefix') format('embedded-opentype'), url('Futura/FuturaPT-Medium.woff') format('woff'), url('Futura/FuturaPT-Medium.ttf') format('truetype');
-  font-weight: 400;
+  src: url('../Futura/FuturaPT-Medium.eot');
+  src: local('Futura PT Medium'), local('FuturaPT-Medium'),
+      url('FuturaPT-Medium.eot?#iefix') format('embedded-opentype'),
+      url('FuturaPT-Medium.woff') format('woff'),
+      url('FuturaPT-Medium.ttf') format('truetype');
+  font-weight: 500;
   font-style: normal;
 }
 body,
