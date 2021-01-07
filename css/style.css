@@ -73,7 +73,7 @@ html h6 {
 }
 .login-to-account {
   float: right;
-  background-image: url(../img/Button_blood.png);
+  background-image: url(../img/Button_blood.webp);
   background-repeat: no-repeat;
   background-position: -5px 10px;
   background-size: 100%;
@@ -99,7 +99,7 @@ html h6 {
   font-style: normal;
 }
 .hero {
-  background-image: url(../img/hero_background.jpg);
+  background-image: url(../img/hero_background.webp);
   background-color: #0d0d0d;
   background-position: center center;
   background-repeat: no-repeat;
@@ -126,7 +126,7 @@ html h6 {
 .buy-button {
   display: inline;
   float: left;
-  background-image: url(../img/Button_blood.png);
+  background-image: url(../img/Button_blood.webp);
   background-repeat: no-repeat;
   background-position: 0px 10px;
   background-size: 100%;
@@ -157,7 +157,7 @@ html h6 {
   margin: -320px 0 -40px 0 !important;
   background-size: 1400px;
   z-index: 10;
-  background-image: url(../img/mvone.png);
+  background-image: url(../img/mvone.webp);
 }
 @media (max-width: 960px) {
   .moose-img {
@@ -177,7 +177,7 @@ html h6 {
   border-width: 0px;
   border-color: #eae9e9;
   border-style: solid;
-  background-image: url(../img/bgb.png);
+  background-image: url(../img/bgb.webp);
   position: relative;
 }
 .packshot p {
@@ -199,7 +199,7 @@ html h6 {
   border-color: #eae9e9;
   border-style: solid;
   background-size: cover;
-  background-image: url(../img/bgw.png);
+  background-image: url(../img/bgw.webp);
 }
 .season img {
   vertical-align: top;
@@ -216,7 +216,7 @@ html h6 {
   color: white;
 }
 .season .body-image {
-  background-image: url(../img/body.png);
+  background-image: url(../img/body.webp);
 }
 .crowdfunding {
   text-align: center;
@@ -229,7 +229,7 @@ html h6 {
   border-width: 0px;
   border-color: #eae9e9;
   border-style: solid;
-  background-image: url(../img/bgb.png);
+  background-image: url(../img/bgb.webp);
 }
 .crowdfunding h1 {
   color: #AD0000;
@@ -276,7 +276,7 @@ html h6 {
   color: black !important;
 }
 .forest {
-  background-image: url(../img/footer_trees.png);
+  background-image: url(../img/footer_trees.webp);
   background-position: center top;
   background-repeat: repeat-x;
   padding: 0px 0px 164px;
@@ -320,7 +320,7 @@ html h6 {
   border-width: 0px;
   border-color: #eae9e9;
   border-style: solid;
-  background-image: url(../img/bgb.png);
+  background-image: url(../img/bgb.webp);
 }
 .moose-main h2 {
   color: #AD0000;
@@ -347,7 +347,7 @@ html h6 {
 .moose-buy-button {
   display: inline;
   float: left;
-  background-image: url(../img/Button_blood.png);
+  background-image: url(../img/Button_blood.webp);
   background-repeat: no-repeat;
   background-position: 0px 10px;
   background-size: 100%;
@@ -370,7 +370,7 @@ html h6 {
   border-width: 0px;
   border-color: #eae9e9;
   border-style: solid;
-  background-image: url(../img/bgb.png);
+  background-image: url(../img/bgb.webp);
   padding-bottom: 100px;
 }
 .about-main h2 {
@@ -394,7 +394,7 @@ html h6 {
   border-width: 0px;
   border-color: #eae9e9;
   border-style: solid;
-  background-image: url(../img/bgb.png);
+  background-image: url(../img/bgb.webp);
 }
 .thankyou-main h2 {
   color: #AD0000;
@@ -418,7 +418,7 @@ html h6 {
   border-width: 0px;
   border-color: #eae9e9;
   border-style: solid;
-  background-image: url(../img/bgb.png);
+  background-image: url(../img/bgb.webp);
 }
 .blog-main h2 {
   color: #AD0000;
@@ -442,7 +442,7 @@ html h6 {
   border-width: 0px;
   border-color: #eae9e9;
   border-style: solid;
-  background-image: url(../img/bgb.png);
+  background-image: url(../img/bgb.webp);
 }
 .delivery-main h2 {
   color: #AD0000;
@@ -466,7 +466,7 @@ html h6 {
   border-width: 0px;
   border-color: #eae9e9;
   border-style: solid;
-  background-image: url(../img/bgb.png);
+  background-image: url(../img/bgb.webp);
 }
 .map-main h2 {
   color: #AD0000;
@@ -490,7 +490,7 @@ html h6 {
   border-width: 0px;
   border-color: #eae9e9;
   border-style: solid;
-  background-image: url(../img/bgb.png);
+  background-image: url(../img/bgb.webp);
 }
 .press-kit-main h2 {
   color: #AD0000;
@@ -514,7 +514,7 @@ html h6 {
   border-width: 0px;
   border-color: #eae9e9;
   border-style: solid;
-  background-image: url(../img/bgb.png);
+  background-image: url(../img/bgb.webp);
 }
 .privacy-policy-main h1 {
   text-align: center;
