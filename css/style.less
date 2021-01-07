@@ -79,12 +79,10 @@ body, html{
 }
 .navbar{
     height: 96px;
-
 }
 .navbar-brand img{
     height: 56px;
     float: left;
-    padding-left: 300px;
 }
 .navbar-right{
     float: right;
@@ -232,17 +230,35 @@ body, html{
         color: black;
     }
 }
-.mc-field-group input{
-    border: 2px solid #AD0000;
-    border-radius: 2px;
+.mc-field-group{
+    width: 100% !important;
+    input{
+        border: 2px solid #AD0000 !important;
+        display: table-cell !important;
+        width: 100% !important;
+    }
+    input:focus{
+        outline: 0px solid #AD0000 !important;
+        display: table-cell !important;
+    }
 }
-.clear{
+.mc_embed_signup{
     display: table-cell;
-    .button{
-        border: 2px solid #AD0000;
-        width: 200px;
-        margin-left: 10px;
-        }
+    width: 100% !important;
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+}
+.button{
+    background-color: #AD0000 !important;
+    height: 50px !important;
+    font-weight: 400 !important;
+    font-size: 24px !important;
+    font-family: 'Futura PT' !important;  
+    width: 100% !important;
+    }
+.button:hover{
+    background-color: white !important;
+    color: black !important;
 }
 .forest{
     background-image: url(../img/footer_trees.png);

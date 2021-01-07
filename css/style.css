@@ -88,7 +88,6 @@ html h6 {
 .navbar-brand img {
   height: 56px;
   float: left;
-  padding-left: 300px;
 }
 .navbar-right {
   float: right;
@@ -233,17 +232,35 @@ html h6 {
 .crowdfunding p {
   color: black;
 }
+.mc-field-group {
+  width: 100% !important;
+}
 .mc-field-group input {
-  border: 2px solid #AD0000;
-  border-radius: 2px;
+  border: 2px solid #AD0000 !important;
+  display: table-cell !important;
+  width: 100% !important;
 }
-.clear {
+.mc-field-group input:focus {
+  outline: 0px solid #AD0000 !important;
+  display: table-cell !important;
+}
+.mc_embed_signup {
   display: table-cell;
+  width: 100% !important;
+  margin-right: 0 !important;
+  padding-right: 0 !important;
 }
-.clear .button {
-  border: 2px solid #AD0000;
-  width: 200px;
-  margin-left: 10px;
+.button {
+  background-color: #AD0000 !important;
+  height: 50px !important;
+  font-weight: 400 !important;
+  font-size: 24px !important;
+  font-family: 'Futura PT' !important;
+  width: 100% !important;
+}
+.button:hover {
+  background-color: white !important;
+  color: black !important;
 }
 .forest {
   background-image: url(../img/footer_trees.png);
