@@ -1,11 +1,8 @@
 @font-face {
   font-family: 'Futura PT';
   src: url('../Futura/FuturaPT-Medium.eot');
-  src: local('Futura PT Medium'), local('FuturaPT-Medium'),
-      url('FuturaPT-Medium.eot?#iefix') format('embedded-opentype'),
-      url('FuturaPT-Medium.woff') format('woff'),
-      url('FuturaPT-Medium.ttf') format('truetype');
-  font-weight: 500;
+  src: local('Futura PT Medium'), local('FuturaPT-Medium'), url('Futura/FuturaPT-Medium.eot?#iefix') format('embedded-opentype'), url('Futura/FuturaPT-Medium.woff') format('woff'), url('Futura/FuturaPT-Medium.ttf') format('truetype');
+  font-weight: 400;
   font-style: normal;
 }
 body,
@@ -16,8 +13,7 @@ html {
   height: 100%;
   font-weight: 400;
   font-size: 24px;
-  font-family: Futura PT !important;
-  word-wrap: break-word; 
+  font-family: 'Futura PT' !important;
 }
 body a,
 html a {
@@ -79,17 +75,24 @@ html h6 {
   float: right;
   background-image: url(../img/Button_blood.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: -5px 10px;
   background-size: 100%;
-  padding-left: 10px;
-  min-width: 180px;
+  width: 200px;
+}
+.container-fluid {
+  color: #f1f2f2 !important;
+}
+.navbar {
+  height: 96px;
 }
 .navbar-brand img {
   height: 56px;
   float: left;
+  padding-left: 300px;
 }
 .navbar-right {
-  float: right !important;
+  float: right;
+  padding-right: 300px;
 }
 .navbar-light {
   font-weight: 400;
