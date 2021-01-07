@@ -73,7 +73,7 @@ html h6 {
 }
 .login-to-account {
   float: right;
-  background-image: url(../img/Button_blood.webp);
+  background-image: url(../img/Button-blood.webp);
   background-repeat: no-repeat;
   background-position: -5px 10px;
   background-size: 100%;
@@ -99,7 +99,7 @@ html h6 {
   font-style: normal;
 }
 .hero {
-  background-image: url(../img/hero_background.webp);
+  background-image: url(../img/hero-background.webp);
   background-color: #0d0d0d;
   background-position: center center;
   background-repeat: no-repeat;
@@ -126,7 +126,7 @@ html h6 {
 .buy-button {
   display: inline;
   float: left;
-  background-image: url(../img/Button_blood.webp);
+  background-image: url(../img/Button-blood.webp);
   background-repeat: no-repeat;
   background-position: 0px 10px;
   background-size: 100%;
@@ -276,7 +276,7 @@ html h6 {
   color: black !important;
 }
 .forest {
-  background-image: url(../img/footer_trees.webp);
+  background-image: url(../img/footer-trees.webp);
   background-position: center top;
   background-repeat: repeat-x;
   padding: 0px 0px 164px;
@@ -347,7 +347,7 @@ html h6 {
 .moose-buy-button {
   display: inline;
   float: left;
-  background-image: url(../img/Button_blood.webp);
+  background-image: url(../img/Button-blood.webp);
   background-repeat: no-repeat;
   background-position: 0px 10px;
   background-size: 100%;
