@@ -288,6 +288,7 @@ html h6 {
 @media (max-width: 960px) {
   .forest {
     background-image: none;
+    background-color: #1c1918;
   }
 }
 .footer {
