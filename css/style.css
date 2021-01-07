@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Futura PT';
   src: url('../Futura/FuturaPT-Medium.eot');
-  src: local('Futura PT Medium'), local('FuturaPT-Medium'), url('Futura/FuturaPT-Medium.eot?#iefix') format('embedded-opentype'), url('Futura/FuturaPT-Medium.woff') format('woff'), url('Futura/FuturaPT-Medium.ttf') format('truetype');
+  src: local('Futura PT Medium'), local('FuturaPT-Medium'), url('../Futura/FuturaPT-Medium.eot?#iefix') format('embedded-opentype'), url('../Futura/FuturaPT-Medium.woff') format('woff'), url('../Futura/FuturaPT-Medium.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
@@ -123,6 +123,22 @@ html h6 {
   max-width: 100%;
   height: auto;
 }
+.hero-bottom {
+  height: 300px !important;
+}
+@media (max-width: 960px) {
+  .hero-bottom {
+    height: 0px;
+  }
+}
+.main-buy-button {
+  font-size: 32px;
+}
+@media (max-width: 960px) {
+  .main-buy-button {
+    text-align: center;
+  }
+}
 .buy-button {
   display: inline;
   float: left;
@@ -137,9 +153,18 @@ html h6 {
   padding-top: 15px;
   color: white;
 }
+@media (max-width: 960px) {
+  .buy-button {
+    text-align: center;
+    background-position: center center;
+    width: 100%;
+    position: relative;
+    padding-left: 0px;
+    padding-top: 15px;
+  }
+}
 .buy-button:hover {
   color: white;
-  filter: alpha(opacity=40);
 }
 .packshot-hero-image {
   height: 600px;
@@ -188,6 +213,14 @@ html h6 {
   height: auto;
   float: left;
 }
+.packshot-header {
+  padding-top: 150px;
+}
+@media (max-width: 960px) {
+  .packshot-header {
+    padding-top: 0px;
+  }
+}
 .season {
   background-color: #161616;
   background-position: center center;
@@ -201,6 +234,14 @@ html h6 {
   background-size: cover;
   background-image: url(../img/bgw.webp);
 }
+.season .season-text {
+  padding-top: 150px;
+}
+@media (max-width: 960px) {
+  .season .season-text {
+    padding-top: 0px;
+  }
+}
 .season img {
   vertical-align: top;
   max-height: 200px;
@@ -211,12 +252,31 @@ html h6 {
 .season h2 {
   text-align: left;
 }
+@media (max-width: 960px) {
+  .season h2 {
+    text-align: center;
+  }
+}
 .season h3 {
   text-align: left;
   color: white;
 }
+@media (max-width: 960px) {
+  .season h3 {
+    text-align: center;
+  }
+}
 .season .body-image {
   background-image: url(../img/body.webp);
+}
+@media (max-width: 960px) {
+  .season-images {
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 }
 .crowdfunding {
   text-align: center;
@@ -343,6 +403,7 @@ html h6 {
 .moose-description {
   color: black;
   padding-bottom: 50px;
+  font-size: 18px !important;
 }
 .moose-buy-button {
   display: inline;

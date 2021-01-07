@@ -2,9 +2,9 @@
     font-family: 'Futura PT';
     src: url('../Futura/FuturaPT-Medium.eot');
     src: local('Futura PT Medium'), local('FuturaPT-Medium'),
-        url('Futura/FuturaPT-Medium.eot?#iefix') format('embedded-opentype'),
-        url('Futura/FuturaPT-Medium.woff') format('woff'),
-        url('Futura/FuturaPT-Medium.ttf') format('truetype');
+        url('../Futura/FuturaPT-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../Futura/FuturaPT-Medium.woff') format('woff'),
+        url('../Futura/FuturaPT-Medium.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -118,6 +118,17 @@ body, html{
     height: auto;
     }
 }
+.hero-bottom{
+    height: 300px !important;
+    @media (max-width: 960px) {
+        height: 0px;
+        }
+}
+.main-buy-button{
+    font-size: 32px;
+    @media (max-width: 960px) {text-align: center};
+}
+
 .buy-button{
     display: inline;
     float: left;
@@ -131,10 +142,17 @@ body, html{
     padding-left: 100px;
     padding-top: 15px;
     color: white;
+    @media (max-width: 960px) {
+        text-align: center;
+        background-position: center center;
+        width: 100%;
+        position: relative;
+        padding-left: 0px;
+        padding-top: 15px;
+        }
 }
 .buy-button:hover{
     color: white;
-    filter: alpha(opacity=40);
 }
 .packshot-hero-image{
     height: 600px;
@@ -155,7 +173,7 @@ body, html{
     background-image: url(../img/mvone.webp);
     @media (max-width: 960px) { 
         background-image: none;
-}
+    }
     .col{
         height: 500px;
     }
@@ -181,6 +199,12 @@ body, html{
         float: left;
     }
 }
+.packshot-header{
+    padding-top: 150px;
+    @media (max-width: 960px) { 
+        padding-top: 0px;
+}
+}
 .season{
     background-color: rgb(22, 22, 22);
     background-position: center center;
@@ -193,6 +217,12 @@ body, html{
     border-style: solid;
     background-size: cover;
     background-image: url(../img/bgw.webp);
+    .season-text{
+        padding-top: 150px;
+        @media (max-width: 960px) { 
+            padding-top: 0px;
+        }
+    }
     img{
         vertical-align: top;
         max-height: 200px;
@@ -202,17 +232,31 @@ body, html{
     }
     h2{
         text-align: left;
+        @media (max-width: 960px) { 
+            text-align: center;
+        }
     }
     h3{
         text-align: left;
         color: white;
+        @media (max-width: 960px) { 
+            text-align: center;
+        }
     }
     .body-image{
         background-image: url(../img/body.webp);
     }
 
 }
-
+.season-images{
+    @media (max-width: 960px) { 
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+}
+}
 .crowdfunding{
     text-align: center;
     background-color: rgb(221, 222, 222);
@@ -282,7 +326,7 @@ body, html{
     @media (max-width: 960px) { 
         background-image: none;
         background-color: #1c1918;
-}
+    }
 }
 .footer{
     font-size: 18px;
@@ -336,6 +380,7 @@ body, html{
  .moose-description{
      color: black;
      padding-bottom: 50px;
+     font-size: 18px !important;
  }
 
 
