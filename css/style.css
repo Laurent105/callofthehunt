@@ -73,7 +73,7 @@ html h6 {
 }
 .login-to-account {
   float: right;
-  background-image: url(../img/Button-blood.webp);
+  background-image: url(../img/button-blood.webp);
   background-repeat: no-repeat;
   background-position: -5px 10px;
   background-size: 100%;
@@ -126,7 +126,7 @@ html h6 {
 .buy-button {
   display: inline;
   float: left;
-  background-image: url(../img/Button-blood.webp);
+  background-image: url(../img/button-blood.webp);
   background-repeat: no-repeat;
   background-position: 0px 10px;
   background-size: 100%;
@@ -347,7 +347,7 @@ html h6 {
 .moose-buy-button {
   display: inline;
   float: left;
-  background-image: url(../img/Button-blood.webp);
+  background-image: url(../img/button-blood.webp);
   background-repeat: no-repeat;
   background-position: 0px 10px;
   background-size: 100%;
