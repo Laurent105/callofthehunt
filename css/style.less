@@ -22,7 +22,7 @@ body, html{
         color: none;
     }
     a:hover{
-        color: #AD0000;
+        color: white ;
     }
     h1{
         font-size: 42px;
@@ -65,20 +65,20 @@ body, html{
     a:hover{
         color: #AD0000 !important;
     }
-    .login-to-account{
-        float: right;
-        background-image: url(../img/Button_blood.png);
-        background-repeat: no-repeat;
-        background-position: -5px 10px;
-        background-size: 100%;
-        width: 200px;
+}
+.login-to-account{
+    float: right;
+    background-image: url(../img/Button_blood.png);
+    background-repeat: no-repeat;
+    background-position: -5px 10px;
+    background-size: 100%;
+    width: 200px;
+    a:hover{
+        color: white !important;
     }
 }
 .container-fluid{
     color: #f1f2f2 !important;
-}
-.navbar{
-    height: 96px;
 }
 .navbar-brand img{
     height: 56px;
@@ -86,7 +86,6 @@ body, html{
 }
 .navbar-right{
     float: right;
-    padding-right: 300px;
 }
 .navbar-light {
     font-weight: 400;
@@ -94,7 +93,7 @@ body, html{
     letter-spacing: 0px;
     font-style: normal;
 }
-.hero{
+.hero{    
     background-image: url(../img/hero_background.jpg);
     background-color: rgb(13, 13, 13);
     background-position: center center;
@@ -114,8 +113,11 @@ body, html{
         display: flex;
         align-items: center;
     }
+    img{
+    max-width: 100%;
+    height: auto;
+    }
 }
-
 .buy-button{
     display: inline;
     float: left;
@@ -151,6 +153,9 @@ body, html{
     background-size: 1400px;
     z-index: 10;
     background-image: url(../img/mvone.png);
+    @media (max-width: 960px) { 
+        background-image: none;
+}
     .col{
         height: 500px;
     }
@@ -171,7 +176,8 @@ body, html{
         color: black;
     }
     img{
-        max-width: 700px;
+        max-width: 100%;
+        height: auto;
         float: left;
     }
 }
@@ -229,6 +235,10 @@ body, html{
     p{
         color: black;
     }
+    img{
+        max-width: 100%;
+        height: auto;
+    }
 }
 .mc-field-group{
     width: 100% !important;
@@ -269,6 +279,9 @@ body, html{
     margin-top: 0px;
     background-size: 441px;
     position: relative; 
+    @media (max-width: 960px) { 
+        background-image: none;
+}
 }
 .footer{
     font-size: 18px;

@@ -22,7 +22,7 @@ html a {
 }
 body a:hover,
 html a:hover {
-  color: #AD0000;
+  color: white ;
 }
 body h1,
 html h1 {
@@ -71,7 +71,7 @@ html h6 {
 .header a:hover {
   color: #AD0000 !important;
 }
-.header .login-to-account {
+.login-to-account {
   float: right;
   background-image: url(../img/Button_blood.png);
   background-repeat: no-repeat;
@@ -79,11 +79,11 @@ html h6 {
   background-size: 100%;
   width: 200px;
 }
+.login-to-account a:hover {
+  color: white !important;
+}
 .container-fluid {
   color: #f1f2f2 !important;
-}
-.navbar {
-  height: 96px;
 }
 .navbar-brand img {
   height: 56px;
@@ -91,7 +91,6 @@ html h6 {
 }
 .navbar-right {
   float: right;
-  padding-right: 300px;
 }
 .navbar-light {
   font-weight: 400;
@@ -119,6 +118,10 @@ html h6 {
 .hero .p {
   display: flex;
   align-items: center;
+}
+.hero img {
+  max-width: 100%;
+  height: auto;
 }
 .buy-button {
   display: inline;
@@ -156,6 +159,11 @@ html h6 {
   z-index: 10;
   background-image: url(../img/mvone.png);
 }
+@media (max-width: 960px) {
+  .moose-img {
+    background-image: none;
+  }
+}
 .moose-img .col {
   height: 500px;
 }
@@ -176,7 +184,8 @@ html h6 {
   color: black;
 }
 .packshot img {
-  max-width: 700px;
+  max-width: 100%;
+  height: auto;
   float: left;
 }
 .season {
@@ -232,6 +241,10 @@ html h6 {
 .crowdfunding p {
   color: black;
 }
+.crowdfunding img {
+  max-width: 100%;
+  height: auto;
+}
 .mc-field-group {
   width: 100% !important;
 }
@@ -271,6 +284,11 @@ html h6 {
   margin-top: 0px;
   background-size: 441px;
   position: relative;
+}
+@media (max-width: 960px) {
+  .forest {
+    background-image: none;
+  }
 }
 .footer {
   font-size: 18px;
