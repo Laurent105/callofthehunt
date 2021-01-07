@@ -328,8 +328,11 @@ html h6 {
 .carousel {
   margin-left: auto;
   margin-right: auto;
+}
+.carousel img {
+  max-width: 600px;
   height: auto;
-  width: 500px;
+  width: 100%;
 }
 .moose-header {
   padding-top: 50px;
