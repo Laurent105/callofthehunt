@@ -118,6 +118,11 @@ body, html{
     height: auto;
     }
 }
+.hero-hide-row{
+    height: 300px;
+    @media (max-width: 960px) {height: 
+        0px;}
+}
 .hero-bottom{
     height: 300px !important;
     @media (max-width: 960px) {
@@ -173,6 +178,7 @@ body, html{
     background-image: url(../img/mvone.webp);
     @media (max-width: 960px) { 
         background-image: none;
+        visibility: hidden;
     }
     .col{
         height: 500px;
@@ -202,8 +208,26 @@ body, html{
 .packshot-header{
     padding-top: 150px;
     @media (max-width: 960px) { 
-        padding-top: 0px;
+        padding-top: 100px;
+    }
 }
+.descritpions-mobile-padding{
+    padding-top: 150px;
+    @media (max-width: 960px) { 
+        padding-top: 50px;
+    }
+}
+.how-to-header{
+    padding-bottom: 100px;
+    @media (max-width: 960px) { 
+        padding-bottom: 50px;
+    }
+}
+.season-header{
+
+    @media (max-width: 960px) { 
+        padding-top: 50px;
+    }
 }
 .season{
     background-color: rgb(22, 22, 22);
@@ -325,9 +349,11 @@ body, html{
     position: relative; 
     @media (max-width: 960px) { 
         background-image: none;
-        background-color: #1c1918;
+        visibility: hidden;
+        padding: 0px 0px 0px;
     }
 }
+
 .footer{
     font-size: 18px;
     background-color: #1c1918;
