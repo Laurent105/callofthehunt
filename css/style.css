@@ -627,3 +627,15 @@ html h6 {
 .privacy-policy-header h1 {
   color: #AD0000;
 }
+.map-list {
+  color: black;
+}
+.map-list a {
+  color: #AD0000;
+}
+.map-text {
+  color: black;
+}
+.map-text a {
+  color: #AD0000;
+}

@@ -61,7 +61,10 @@
       src="https://www.facebook.com/tr?id=275231110596655&ev=PageView&noscript=1"
       /></noscript>
       <!-- End Facebook Pixel Code -->
-
+      <!--Yandex Maps-->
+      <script src="https://api-maps.yandex.ru/2.1/?apikey=b3b4f211-f72c-40c4-a085-037bbd7c7237&lang=ru_RU" type="text/javascript">
+      </script>
+      <!-- /Yandex Maps-->
 </head>
 <body>
     <!-- Yandex.Metrika counter -->
@@ -122,14 +125,43 @@
                 <h1>Где найти склад</h1><br>
             </div>
             <div class="container-fluid">
+              <div class="row">
+                <div class="col-xl-2"></div>
+                <div class="col-md col-xs-12 map-text">
+                  <p>Дотсавка товара осуществляется через систему <a href="https://sberlogistics.ru/">"СберЛогистика"</a>. В случае возникновения проблем, вы можете обратится:</p>
+                  <ul class="map-list">
+                    <li>К службе доставки по телефону <a href="tel:88001007269">+7 (800) 100-72-69</a></li>
+                    <li>По почте к нам: <a href="mailto:hello@callofthehunt.com">hello@callofthehunt.com</a></li>
+                    <li>По телефону к нам (с 9:00 до 18:00): <a href="tel:89686475470">+7 (968) 647‑54‑70</a></li>
+                  </ul>
+                  <p>Склад, на котором находится самовывоз находится по адресу: Москва, улица Автомоторная, 7. Его же вы можете найти ниже на карте.</p>
+                </div>
+                <div class="col-xl-2"></div>
+              </div>
                 <div class="row">
-                  <div class="col-2"></div>
                     <div class="col">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, animi ut perspiciatis explicabo dicta vero necessitatibus suscipit eum quis ratione obcaecati sit voluptatibus sint harum. Quis, id! Dolorum sequi magnam molestiae delectus enim vero odit, quia reiciendis aliquam id sit, dignissimos qui voluptatibus distinctio eligendi! Cupiditate quidem molestias culpa ad.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius vitae necessitatibus officiis labore maxime quam pariatur nobis natus minima quidem ad, omnis totam delectus voluptatum?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, labore nam cumque perferendis blanditiis quas necessitatibus fuga quod? Earum, ex veritatis! Mollitia assumenda dolorum dolore maxime adipisci animi unde cum impedit ad, fugiat sed dicta quis itaque nostrum, officia veniam saepe consequuntur molestiae explicabo maiores nihil? Sequi aliquid numquam ullam!</p>
+                      <div id="map" style="width: 80%; height: 70vh; margin: 0 auto;">
+                        <script type="text/javascript">
+                          // Функция ymaps.ready() будет вызвана, когда
+                          // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+                          ymaps.ready(init);
+                          function init(){
+                              // Создание карты.
+                              var myMap = new ymaps.Map("map", {
+                                  // Координаты центра карты.
+                                  // Порядок по умолчанию: «широта, долгота».
+                                  // Чтобы не определять координаты центра карты вручную,
+                                  // воспользуйтесь инструментом Определение координат.
+                                  center: [55.85, 37.53],
+                                  // Уровень масштабирования. Допустимые значения:
+                                  // от 0 (весь мир) до 19.
+                                  zoom: 7
+                              });
+                          }
+                      </script>
+                      </div>
+
                     </div>
-                    <div class="col-2"></div>
                 </div>
             </div>
 
