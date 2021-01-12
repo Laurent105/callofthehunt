@@ -64,6 +64,15 @@
       <!--Yandex Maps-->
       <script src="https://api-maps.yandex.ru/2.1/?apikey=b3b4f211-f72c-40c4-a085-037bbd7c7237&lang=ru_RU" type="text/javascript">
       </script>
+      <script type="text/javascript">
+        ymaps.ready(init);
+        function init(){
+        var myMap = new ymaps.Map("map", {
+        center: [55.851571, 37.531981],
+        zoom: 18
+        });
+        }
+      </script>
       <!-- /Yandex Maps-->
 </head>
 <body>
@@ -141,24 +150,6 @@
                 <div class="row">
                     <div class="col">
                       <div id="map" style="width: 80%; height: 70vh; margin: 0 auto;">
-                        <script type="text/javascript">
-                          // Функция ymaps.ready() будет вызвана, когда
-                          // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
-                          ymaps.ready(init);
-                          function init(){
-                              // Создание карты.
-                              var myMap = new ymaps.Map("map", {
-                                  // Координаты центра карты.
-                                  // Порядок по умолчанию: «широта, долгота».
-                                  // Чтобы не определять координаты центра карты вручную,
-                                  // воспользуйтесь инструментом Определение координат.
-                                  center: [55.85, 37.53],
-                                  // Уровень масштабирования. Допустимые значения:
-                                  // от 0 (весь мир) до 19.
-                                  zoom: 7
-                              });
-                          }
-                      </script>
                       </div>
 
                     </div>
