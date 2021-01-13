@@ -1,4 +1,5 @@
 User-Agent: *
-Disallow: final.html
+Disallow: /final.html
+Disallow: /final
+Allow: /sitemap.xml
 Sitemap: https://callofthehunt.com/sitemap.xml
-Host: https://callofthehnt.com
