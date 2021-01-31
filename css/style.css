@@ -12,7 +12,7 @@ html {
   width: 100%;
   height: 100%;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 18px;
   font-family: 'Futura PT' !important;
 }
 body a,
@@ -59,6 +59,10 @@ html h6 {
   font-size: 30px;
   text-align: center;
   color: #AD0000;
+}
+body .index-page,
+html .index-page {
+  font-size: 22px;
 }
 .header {
   color: #f1f2f2 !important;
