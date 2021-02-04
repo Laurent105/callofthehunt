@@ -9,6 +9,17 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Futura Book';
+    src: url('../Futura/FuturaPT-Book.eot');
+    src: local('Futura PT Book'), local('FuturaPT-Book'),
+        url('../Futura/FuturaPT-Book.eot?#iefix') format('embedded-opentype'),
+        url('../Futura/FuturaPT-Book.woff') format('woff'),
+        url('../Futura/FuturaPT-Book.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
 body, html{
     background-color: #060606;
     color: #f1f2f2;
@@ -16,7 +27,7 @@ body, html{
     height: 100%;
     font-weight: 400;
     font-size: 19px;
-    font-family: 'Futura PT' !important;  
+    font-family: 'Futura Book' !important;  
     a{
         text-decoration: none;
         color: white;
@@ -25,31 +36,37 @@ body, html{
         color: white ;
     }
     h1{
+        font-family: 'Futura PT' !important; 
         font-size: 42px;
         text-align: center;
         color: #AD0000;
     }
     h2{
+        font-family: 'Futura PT' !important; 
         font-size: 38px;
         text-align: center;
         color: #AD0000;
     }
     h3{
+        font-family: 'Futura PT' !important; 
         font-size: 36px;
         text-align: center;
         color: #AD0000;
     }
     h4{
+        font-family: 'Futura PT' !important; 
         font-size: 34px;
         text-align: center;
         color: #AD0000;
     }
     h5{
+        font-family: 'Futura PT' !important; 
         font-size: 32px;
         text-align: center;
         color: #AD0000;
     }
     h6{
+        font-family: 'Futura PT' !important; 
         font-size: 30px;
         text-align: center;
         color: #AD0000;
@@ -59,26 +76,31 @@ body, html{
     }
 }
 .header{
-    color: #f1f2f2 !important;
     font-weight: 400;
     font-size: 20px;
     letter-spacing: 0px;
     font-style: normal;
     background-color: black;
+    color: #f1f2f2;
     a:hover{
         color: #AD0000 !important;
     }
+}
+.white-text{
+    color: #f1f2f2 !important;
 }
 .login-to-account{
     float: right;
     background-image: url(../img/button-blood.webp);
     background-repeat: no-repeat;
-    background-position: -5px 10px;
+    background-position: -7px 10px;
     background-size: 100%;
     width: 200px;
+    -webkit-filter: brightness(100%);
 }
 .login-to-account:hover{
-    color: black !important;
+    -webkit-filter: brightness(70%);
+    color: #f1f2f2 !important;
 }
 .container-fluid{
     color: #f1f2f2 !important;
@@ -150,6 +172,7 @@ body, html{
     padding-left: 100px;
     padding-top: 15px;
     color: white;
+    -webkit-filter: brightness(100%);
     @media (max-width: 960px) {
         text-align: center;
         background-position: center center;
@@ -160,7 +183,7 @@ body, html{
         }
 }
 .buy-button:hover{
-    color: white;
+    -webkit-filter: brightness(70%);
 }
 .packshot-hero-image{
     height: 600px;
@@ -191,7 +214,7 @@ body, html{
     background-color: rgb(221, 222, 222);
     background-position: center top;
     background-repeat: repeat-y;
-    padding: 2% 30px;
+    padding: 2% 0px;
     margin-bottom: 0px;
     margin-top: -100px;
     border-width: 0px;
@@ -200,7 +223,7 @@ body, html{
     background-image: url(../img/bgb.webp);
     position: relative;
     p{
-        color: black;
+        color: black;   
     }
     img{
         max-width: 100%;
@@ -273,6 +296,9 @@ body, html{
     .body-image{
         background-image: url(../img/body.webp);
     }
+    p{
+        color: white;
+    }
 
 }
 .season-images{
@@ -289,7 +315,7 @@ body, html{
     background-color: rgb(221, 222, 222);
     background-position: center bottom;
     background-repeat: repeat-y;
-    padding: 0px 30px 5%;
+    padding: 2% 0px 5%;
     margin-bottom: -5%;
     margin-top: 0px;
     border-width: 0px;
