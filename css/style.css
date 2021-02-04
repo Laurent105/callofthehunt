@@ -98,10 +98,10 @@ html .index-page {
   background-position: -7px 10px;
   background-size: 100%;
   width: 200px;
-  -webkit-filter: brightness(100%);
+  filter: brightness(100%);
 }
 .login-to-account:hover {
-  -webkit-filter: brightness(70%);
+  filter: brightness(70%);
   color: #f1f2f2 !important;
 }
 .container-fluid {
@@ -182,7 +182,7 @@ html .index-page {
   padding-left: 100px;
   padding-top: 15px;
   color: white;
-  -webkit-filter: brightness(100%);
+  filter: brightness(100%);
 }
 @media (max-width: 960px) {
   .buy-button {
@@ -195,7 +195,7 @@ html .index-page {
   }
 }
 .buy-button:hover {
-  -webkit-filter: brightness(70%);
+  filter: brightness(70%);
 }
 .packshot-hero-image {
   height: 600px;
