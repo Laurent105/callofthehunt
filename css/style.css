@@ -110,7 +110,7 @@ html span {
   margin-top: 95px;
 }
 .hero-padding {
-  padding-top: 96px;
+  padding-top: 30px;
   padding-bottom: 54px;
 }
 .hero-h1 {
@@ -119,8 +119,28 @@ html span {
 .hero-bullets-padding {
   padding-bottom: 47px;
 }
-.hero-buy-button {
-  padding-top: 72px;
+.hero-buy-button .btn {
+  padding-top: 30px;
+  font-family: Futura PT;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 22px;
+  /* identical to box height */
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 0px 2px 0px rgba(240, 2, 13, 0.86);
+  width: 304px;
+  height: 80px;
+  left: 375px;
+  top: 2228px;
+  background: linear-gradient(180deg, #FF4041 0%, #E81414 100%);
+  box-shadow: 0px 0px 54px rgba(255, 0, 2, 0.4), inset 0px 3px 0px #C90001;
+  border-radius: 7px;
+}
+.hero-buy-button .btn:hover {
+  filter: brightness(90%);
+  color: #FFFFFF !important;
 }
 .details-block h2 {
   padding-top: 30px;
@@ -287,7 +307,7 @@ html span {
 }
 .bg-image {
   position: absolute;
-  width: 1501px;
+  width: 1200px;
   height: 2311px;
   left: 557px;
   top: 1081px;
@@ -304,4 +324,22 @@ html span {
   line-height: 55px;
   color: #000000;
   text-align: left;
+}
+.faq-block .accordion-button {
+  font-family: Futura PT;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  color: #000000;
+  text-shadow: 0px 10px 24px rgba(0, 0, 0, 0.06);
+}
+.faq-block .accordion-body {
+  font-family: Futura PT;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  color: #000000;
+  text-shadow: 0px 10px 24px rgba(0, 0, 0, 0.06);
 }
