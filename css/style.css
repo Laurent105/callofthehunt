@@ -315,6 +315,7 @@ html span {
 }
 .faq-block {
   background: url(../img/faq-bg.png);
+  padding-top: 200px;
 }
 .faq-block h2 {
   font-family: Futura PT;
@@ -324,6 +325,14 @@ html span {
   line-height: 55px;
   color: #000000;
   text-align: left;
+}
+.faq-block span {
+  font-family: Futura PT;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  color: #525252;
 }
 .faq-block .accordion-button {
   font-family: Futura PT;
@@ -342,4 +351,36 @@ html span {
   line-height: 31px;
   color: #000000;
   text-shadow: 0px 10px 24px rgba(0, 0, 0, 0.06);
+}
+.crowdfunding {
+  margin-top: 60px;
+  margin-bottom: 120px;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 24px rgba(255, 0, 0, 0.08);
+  border-radius: 5px;
+  background: url(../img/funded.png);
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.crowdfunding h2 {
+  font-family: Futura PT;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 37px;
+  line-height: 47px;
+}
+.crowdfunding span {
+  font-family: Futura PT;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #525252;
+}
+.footer {
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background: #181010;
 }
