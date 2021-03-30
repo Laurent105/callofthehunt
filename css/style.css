@@ -384,3 +384,25 @@ html span {
   padding-bottom: 118px;
   background: #181010;
 }
+.footer img {
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+.footer span {
+  font-family: Futura PT;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 29px;
+  color: #C9C9C9;
+}
+.footer h5 {
+  font-family: Futura PT;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 29px;
+  color: #FFFFFF;
+  text-align: left;
+  padding-bottom: 20px;
+}
