@@ -106,6 +106,9 @@ html span {
   background-image: url(../img/hero-block-bg.webp);
   height: 1030px;
 }
+.hero-block .hero-box {
+  margin-top: 250px;
+}
 .hero-block-margin {
   margin-top: 95px;
 }
