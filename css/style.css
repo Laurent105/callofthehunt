@@ -122,6 +122,18 @@ html span {
 .hero-bullets-padding {
   padding-bottom: 47px;
 }
+.hero-buy-button-price {
+  top: 0;
+  left: 0;
+  width: 180px;
+  height: -webkit-calc(98%);
+  height: -moz-calc(98%);
+  height: 80px;
+  border: 1px solid #E51314;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-left: -20px;
+}
 .hero-buy-button .btn {
   padding-top: 30px;
   font-family: Futura PT;
@@ -129,7 +141,6 @@ html span {
   font-weight: normal;
   font-size: 17px;
   line-height: 22px;
-  /* identical to box height */
   text-align: center;
   color: #FFFFFF;
   text-shadow: 0px 2px 0px rgba(240, 2, 13, 0.86);
