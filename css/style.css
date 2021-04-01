@@ -647,3 +647,29 @@ html p {
 .delivery-main a:hover {
   color: #AD0000 !important;
 }
+.press-kit-main h2 {
+  padding-top: 30px;
+  color: #000000;
+  text-align: left;
+}
+.press-kit-main h3 {
+  color: #000000;
+  text-align: left;
+}
+.press-kit-main h4 {
+  color: #000000;
+  text-align: left;
+}
+.press-kit-main p {
+  color: #000000;
+}
+.press-kit-main li {
+  color: #000000;
+}
+.press-kit-main a {
+  text-decoration: none;
+  color: #000000;
+}
+.press-kit-main a:hover {
+  color: #AD0000 !important;
+}
