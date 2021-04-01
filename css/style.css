@@ -1,12 +1,12 @@
 @font-face {
-  font-family: 'Futura PT';
+  font-family: 'Futura PT medium';
   src: url('../Futura/FuturaPT-Medium.eot');
   src: local('Futura PT Medium'), local('FuturaPT-Medium'), url('../Futura/FuturaPT-Medium.eot?#iefix') format('embedded-opentype'), url('../Futura/FuturaPT-Medium.woff') format('woff'), url('../Futura/FuturaPT-Medium.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Futura Book';
+  font-family: 'Futura PT';
   src: url('../Futura/FuturaPT-Book.eot');
   src: local('Futura PT Book'), local('FuturaPT-Book'), url('../Futura/FuturaPT-Book.eot?#iefix') format('embedded-opentype'), url('../Futura/FuturaPT-Book.woff') format('woff'), url('../Futura/FuturaPT-Book.ttf') format('truetype');
   font-weight: 400;
@@ -14,7 +14,7 @@
 }
 body,
 html {
-  color: FFFFFF;
+  color: #FFFFFF;
   width: 100%;
   height: 100%;
   font-weight: 400;
@@ -89,14 +89,30 @@ body .btn:hover,
 html .btn:hover {
   color: #AD0000;
 }
-body span,
-html span {
+body p,
+html p {
   font-family: Futura PT;
   font-style: normal;
   font-weight: normal;
   font-size: 19px;
   line-height: 24px;
   color: #FFFFFF;
+}
+.header .white-text {
+  font-family: Futura PT;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 24px;
+  color: #FFFFFF !important;
+}
+.header .white-text:hover {
+  font-family: Futura PT;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 24px;
+  color: #FF4343 !important;
 }
 .header .btn {
   border: 1px solid #FFFFFF;
@@ -172,6 +188,9 @@ html span {
   margin-left: -30px;
   text-align: center;
   z-index: -5;
+}
+.details-block {
+  color: #000000;
 }
 .details-block h2 {
   padding-top: 30px;
@@ -338,15 +357,17 @@ html span {
 }
 .bg-image {
   position: absolute;
-  width: 1200px;
+  background-image: url(../img/packshot-nc-big.png);
+  width: 1501px;
   height: 2311px;
   left: 557px;
   top: 1081px;
-  background: url(../img/packshot-nc-big.png);
+  z-index: -5;
 }
 .faq-block {
   background: url(../img/faq-bg.png);
   padding-top: 200px;
+  background: radial-gradient(34.31% 34.31% at 38.47% 57.48%, rgba(255, 0, 0, 0.1) 0%, rgba(196, 196, 196, 0) 100%);
   position: relative;
 }
 .faq-block h2 {
@@ -358,7 +379,7 @@ html span {
   color: #000000;
   text-align: left;
 }
-.faq-block span {
+.faq-block p {
   font-family: Futura PT;
   font-style: normal;
   font-weight: normal;
@@ -368,38 +389,53 @@ html span {
 }
 .faq-block .accordion-button {
   font-family: Futura PT;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 31px;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 24px !important;
+  line-height: 31px !important;
   color: #000000;
-  text-shadow: 0px 10px 24px rgba(0, 0, 0, 0.06);
+  text-shadow: 0px 10px 24px rgba(0, 0, 0, 0.06) !important;
 }
 .faq-block .accordion-body {
   font-family: Futura PT !important;
-  font-style: normal;
-  font-weight: normal;
+  font-style: normal !important;
+  font-weight: normal !important;
   font-size: 18px !important;
-  line-height: 27px;
+  line-height: 27px !important;
   color: #000000;
   text-shadow: 0px 10px 18px rgba(0, 0, 0, 0.06);
-}
-.faq-block .mailchimp-border {
-  border: 3px solid #FF7878;
-  box-sizing: border-box;
-  border-radius: 10px;
 }
 .faq-block .button {
   background: linear-gradient(180deg, #FF8687 0%, #FF2C2C 100%);
   border-radius: 7px;
   min-height: 80px;
   min-width: 435px;
-  margin: auto;
   margin: 0;
   position: absolute;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, 0%);
+}
+.faq-block .button:hover {
+  filter: brightness(90%);
+  color: #FFFFFF !important;
+}
+.faq-block .mc-field-group-input {
+  background: #F0F0F0;
+  box-shadow: inset 0px 0px 16px rgba(1, 12, 54, 0.04);
+  border-radius: 7px;
+  max-width: 435px;
+  height: 80px;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.mailchimp-border {
+  border: 3px solid #FF7878;
+  box-sizing: border-box;
+  border-radius: 10px;
 }
 .crowdfunding {
   margin-top: 60px;
@@ -420,7 +456,7 @@ html span {
   font-size: 37px;
   line-height: 47px;
 }
-.crowdfunding span {
+.crowdfunding p {
   font-family: Futura PT;
   font-style: normal;
   font-weight: normal;
@@ -438,13 +474,29 @@ html span {
   padding-right: 15px;
   padding-bottom: 15px;
 }
-.footer span {
+.footer p {
   font-family: Futura PT;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 29px;
   color: #C9C9C9;
+}
+.footer a {
+  font-family: Futura PT;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 29px;
+  color: #C9C9C9;
+}
+.footer a:hover {
+  font-family: Futura PT;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15;
+  line-height: 29px;
+  color: #FF4343;
 }
 .footer h5 {
   font-family: Futura PT;

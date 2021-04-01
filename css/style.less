@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Futura PT';
+    font-family: 'Futura PT medium';
     src: url('../Futura/FuturaPT-Medium.eot');
     src: local('Futura PT Medium'), local('FuturaPT-Medium'),
         url('../Futura/FuturaPT-Medium.eot?#iefix') format('embedded-opentype'),
@@ -10,7 +10,7 @@
 }
 
 @font-face {
-    font-family: 'Futura Book';
+    font-family: 'Futura PT';
     src: url('../Futura/FuturaPT-Book.eot');
     src: local('Futura PT Book'), local('FuturaPT-Book'),
         url('../Futura/FuturaPT-Book.eot?#iefix') format('embedded-opentype'),
@@ -21,7 +21,7 @@
 }
 
 body, html{
-    color: FFFFFF;
+    color: #FFFFFF;
     width: 100%; 
     height: 100%;
     font-weight: 400;
@@ -85,7 +85,7 @@ body, html{
     .btn:hover{
         color: #AD0000;
     }
-    span{
+    p{
         font-family: Futura PT;
         font-style: normal;
         font-weight: normal;
@@ -95,6 +95,22 @@ body, html{
     }
 }
 .header{
+    .white-text{
+        font-family: Futura PT;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 19px;
+        line-height: 24px;
+        color: #FFFFFF !important;
+    }
+    .white-text:hover{
+        font-family: Futura PT;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 19px;
+        line-height: 24px;
+        color: #FF4343 !important;
+    }
     .btn{
         border: 1px solid #FFFFFF;
         box-sizing: border-box;
@@ -174,6 +190,7 @@ text-shadow: 0px 3px 0px rgba(253, 58, 59, 0.61);
     z-index: -5;
 }
 .details-block{
+    color: #000000;;
     h2{
         padding-top: 30px;
     }
@@ -340,15 +357,19 @@ text-shadow: 0px 3px 0px rgba(253, 58, 59, 0.61);
 }
 .bg-image{
     position: absolute;
-    width: 1200px;
+    background-image: url(../img/packshot-nc-big.png);
+    width: 1501px;
     height: 2311px;
     left: 557px;
     top: 1081px;
-    background: url(../img/packshot-nc-big.png);
+    z-index: -5;
 }
 .faq-block{
     background: url(../img/faq-bg.png);
     padding-top: 200px;
+
+    background: radial-gradient(34.31% 34.31% at 38.47% 57.48%, rgba(255, 0, 0, 0.1) 0%, rgba(196, 196, 196, 0) 100%);
+    
     position: relative;
     h2{
         font-family: Futura PT;
@@ -359,7 +380,7 @@ text-shadow: 0px 3px 0px rgba(253, 58, 59, 0.61);
         color: #000000;
         text-align: left;
     }
-    span{
+    p{
         font-family: Futura PT;
         font-style: normal;
         font-weight: normal;
@@ -370,40 +391,54 @@ text-shadow: 0px 3px 0px rgba(253, 58, 59, 0.61);
     }
     .accordion-button{
         font-family: Futura PT;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 31px;
+        font-style: normal !important;
+        font-weight: normal !important;
+        font-size: 24px !important;
+        line-height: 31px !important;
         color: #000000;
-        text-shadow: 0px 10px 24px rgba(0, 0, 0, 0.06);
+        text-shadow: 0px 10px 24px rgba(0, 0, 0, 0.06) !important;
     }
     .accordion-body{
         font-family: Futura PT !important;
-        font-style: normal;
-        font-weight: normal;
+        font-style: normal !important;
+        font-weight: normal !important;
         font-size: 18px !important;
-        line-height: 27px;
+        line-height: 27px !important;
         color: #000000;
         text-shadow: 0px 10px 18px rgba(0, 0, 0, 0.06);
-    }
-    .mailchimp-border{
-        border: 3px solid #FF7878;
-        box-sizing: border-box;
-        border-radius: 10px;
     }
     .button{
         background: linear-gradient(180deg, #FF8687 0%, #FF2C2C 100%);
         border-radius: 7px;
         min-height: 80px;
         min-width: 435px;
-        margin: auto;
         margin: 0;
         position: absolute;
-        
         left: 50%;
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, 0%);
     }
+    .button:hover{
+        filter: brightness(90%);
+        color: #FFFFFF !important;
+    }
+    .mc-field-group-input{
+        background: #F0F0F0;
+        box-shadow: inset 0px 0px 16px rgba(1, 12, 54, 0.04);
+        border-radius: 7px;
+        max-width: 435px;
+        height: 80px;
+        margin: 0;
+        position: absolute;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+}
+.mailchimp-border{
+    border: 3px solid #FF7878;
+    box-sizing: border-box;
+    border-radius: 10px;
 }
 .crowdfunding{
     margin-top: 60px;
@@ -423,7 +458,7 @@ text-shadow: 0px 3px 0px rgba(253, 58, 59, 0.61);
         font-size: 37px;
         line-height: 47px;
     }
-    span{
+    p{
         font-family: Futura PT;
         font-style: normal;
         font-weight: normal;
@@ -441,13 +476,29 @@ text-shadow: 0px 3px 0px rgba(253, 58, 59, 0.61);
         padding-right: 15px;
         padding-bottom: 15px;
     }
-    span{
+    p{
         font-family: Futura PT;
         font-style: normal;
         font-weight: normal;
         font-size: 15px;
         line-height: 29px;
         color: #C9C9C9;
+    }
+    a{
+        font-family: Futura PT;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 29px;
+        color: #C9C9C9;
+    }
+    a:hover{
+        font-family: Futura PT;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15;
+        line-height: 29px;
+        color: #FF4343;
     }
     h5{
         font-family: Futura PT;
