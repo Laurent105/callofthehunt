@@ -699,3 +699,47 @@ html p {
 .map-main a:hover {
   color: #AD0000 !important;
 }
+.about-main h2 {
+  padding-top: 30px;
+  color: #000000;
+  text-align: left;
+}
+.about-main h3 {
+  color: #000000;
+  text-align: left;
+}
+.about-main h4 {
+  color: #000000;
+  text-align: left;
+}
+.about-main p {
+  color: #000000;
+}
+.about-main li {
+  color: #000000;
+}
+.about-main a {
+  text-decoration: none;
+  color: #000000;
+}
+.about-main a:hover {
+  color: #AD0000 !important;
+}
+.about-main .button {
+  background: linear-gradient(180deg, #FF8687 0%, #FF2C2C 100%);
+  border-radius: 7px;
+  min-height: 80px;
+  min-width: 435px;
+}
+.about-main .button:hover {
+  filter: brightness(90%);
+  color: #FFFFFF !important;
+}
+.about-main .mc-field-group-input {
+  background: #F0F0F0;
+  box-shadow: inset 0px 0px 16px rgba(1, 12, 54, 0.04);
+  border-radius: 7px;
+  min-width: 435px;
+  height: 80px;
+  margin: 0;
+}
