@@ -465,16 +465,16 @@ html p {
   text-align: center;
   color: #525252;
 }
-.footer {
+.main-footer {
   padding-top: 118px;
   padding-bottom: 118px;
   background: #181010;
 }
-.footer img {
+.main-footer img {
   padding-right: 15px;
   padding-bottom: 15px;
 }
-.footer p {
+.main-footer p {
   font-family: Futura PT;
   font-style: normal;
   font-weight: normal;
@@ -482,7 +482,7 @@ html p {
   line-height: 29px;
   color: #C9C9C9;
 }
-.footer a {
+.main-footer a {
   font-family: Futura PT;
   font-style: normal;
   font-weight: normal;
@@ -490,7 +490,7 @@ html p {
   line-height: 29px;
   color: #C9C9C9;
 }
-.footer a:hover {
+.main-footer a:hover {
   font-family: Futura PT;
   font-style: normal;
   font-weight: normal;
@@ -498,7 +498,7 @@ html p {
   line-height: 29px;
   color: #FF4343;
 }
-.footer h5 {
+.main-footer h5 {
   font-family: Futura PT;
   font-style: normal;
   font-weight: normal;
@@ -507,4 +507,94 @@ html p {
   color: #FFFFFF;
   text-align: left;
   padding-bottom: 20px;
+}
+.moose-header {
+  background: #120000;
+}
+.moose-main h2 {
+  padding-top: 90px;
+  padding-bottom: 30px;
+  text-align: left;
+}
+.moose-main h3 {
+  font-family: Futura PT;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 41px;
+  color: #000000;
+  text-align: left;
+}
+.moose-main p {
+  font-family: Futura PT;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 122.7%;
+  color: #000000;
+}
+.moose-main ul {
+  list-style: none;
+}
+.moose-main li {
+  font-family: Futura PT;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+.moose-main li:before {
+  content: "• ";
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  color: #EA1717;
+}
+.moose-main .carousel-background {
+  background-image: url(../img/carousel-background.png);
+}
+.buy-bar {
+  background: #FFFFFF;
+  box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.03);
+  border-radius: 0px;
+  height: 150px;
+  position: sticky;
+  bottom: 0;
+}
+.buy-bar .btn {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+  padding-top: 30px;
+  font-family: Futura PT;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 0px 2px 0px rgba(240, 2, 13, 0.86);
+  width: 300px;
+  height: 80px;
+  background: linear-gradient(180deg, #FF4041 0%, #E81414 100%);
+  box-shadow: 0px 0px 54px rgba(255, 0, 2, 0.4), inset 0px 3px 0px #C90001;
+  border-radius: 7px;
+}
+.buy-bar .btn:hover {
+  filter: brightness(90%);
+  color: #FFFFFF !important;
+}
+.buy-bar p {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+  font-family: Futura PT;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 57px;
+  color: #000000;
 }
