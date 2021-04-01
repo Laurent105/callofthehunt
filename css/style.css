@@ -98,6 +98,21 @@ html span {
   line-height: 24px;
   color: #FFFFFF;
 }
+.header .btn {
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding-left: 35px;
+  padding-right: 35px;
+  float: right;
+}
+.header .btn:hover {
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: #000000 !important;
+}
 .navbar {
   padding-left: 300px;
 }
@@ -105,6 +120,7 @@ html span {
   margin-top: -85px;
   background-image: url(../img/hero-block-bg.webp);
   height: 1030px;
+  z-index: -6;
 }
 .hero-block .hero-box {
   margin-top: 250px;
@@ -121,18 +137,6 @@ html span {
 }
 .hero-bullets-padding {
   padding-bottom: 47px;
-}
-.hero-buy-button-price {
-  top: 0;
-  left: 0;
-  width: 180px;
-  height: -webkit-calc(98%);
-  height: -moz-calc(98%);
-  height: 80px;
-  border: 1px solid #E51314;
-  border-bottom-right-radius: 5px;
-  border-top-right-radius: 5px;
-  margin-left: -20px;
 }
 .hero-buy-button .btn {
   padding-top: 30px;
@@ -151,10 +155,23 @@ html span {
   background: linear-gradient(180deg, #FF4041 0%, #E81414 100%);
   box-shadow: 0px 0px 54px rgba(255, 0, 2, 0.4), inset 0px 3px 0px #C90001;
   border-radius: 7px;
+  z-index: -4;
 }
 .hero-buy-button .btn:hover {
   filter: brightness(90%);
   color: #FFFFFF !important;
+}
+.hero-buy-button-price {
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #E51314;
+  box-sizing: border-box;
+  border-radius: 7px;
+  margin-left: -30px;
+  text-align: center;
+  z-index: -5;
 }
 .details-block h2 {
   padding-top: 30px;
@@ -330,13 +347,14 @@ html span {
 .faq-block {
   background: url(../img/faq-bg.png);
   padding-top: 200px;
+  position: relative;
 }
 .faq-block h2 {
   font-family: Futura PT;
   font-style: normal;
   font-weight: 600;
-  font-size: 37px;
-  line-height: 55px;
+  font-size: 27px;
+  line-height: 35px;
   color: #000000;
   text-align: left;
 }
@@ -358,13 +376,30 @@ html span {
   text-shadow: 0px 10px 24px rgba(0, 0, 0, 0.06);
 }
 .faq-block .accordion-body {
-  font-family: Futura PT;
+  font-family: Futura PT !important;
   font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 31px;
+  font-weight: normal;
+  font-size: 18px !important;
+  line-height: 27px;
   color: #000000;
-  text-shadow: 0px 10px 24px rgba(0, 0, 0, 0.06);
+  text-shadow: 0px 10px 18px rgba(0, 0, 0, 0.06);
+}
+.faq-block .mailchimp-border {
+  border: 3px solid #FF7878;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.faq-block .button {
+  background: linear-gradient(180deg, #FF8687 0%, #FF2C2C 100%);
+  border-radius: 7px;
+  min-height: 80px;
+  min-width: 435px;
+  margin: auto;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, 0%);
 }
 .crowdfunding {
   margin-top: 60px;
@@ -376,6 +411,7 @@ html span {
   border-radius: 5px;
   background: url(../img/funded.png);
   transform: matrix(1, 0, 0, 1, 0, 0);
+  max-width: 1200px;
 }
 .crowdfunding h2 {
   font-family: Futura PT;
