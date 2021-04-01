@@ -673,3 +673,29 @@ html p {
 .press-kit-main a:hover {
   color: #AD0000 !important;
 }
+.map-main h2 {
+  padding-top: 30px;
+  color: #000000;
+  text-align: left;
+}
+.map-main h3 {
+  color: #000000;
+  text-align: left;
+}
+.map-main h4 {
+  color: #000000;
+  text-align: left;
+}
+.map-main p {
+  color: #000000;
+}
+.map-main li {
+  color: #000000;
+}
+.map-main a {
+  text-decoration: none;
+  color: #000000;
+}
+.map-main a:hover {
+  color: #AD0000 !important;
+}
