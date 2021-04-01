@@ -791,3 +791,18 @@ html p {
 .thankyou-main a:hover {
   color: #AD0000 !important;
 }
+.final-main {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.final-main h2 {
+  color: #000000;
+  text-align: center;
+}
+.final-main img {
+  height: 800px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
