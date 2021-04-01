@@ -773,3 +773,21 @@ html p {
   padding-top: 100px;
   padding-bottom: 200px;
 }
+.thankyou-main {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.thankyou-main h2 {
+  color: #000000;
+  text-align: center;
+}
+.thankyou-main p {
+  color: #000000;
+}
+.thankyou-main a {
+  text-decoration: none;
+  color: #000000;
+}
+.thankyou-main a:hover {
+  color: #AD0000 !important;
+}
