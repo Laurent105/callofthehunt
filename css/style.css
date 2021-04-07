@@ -592,6 +592,7 @@ html p {
 .buy-bar .btn {
   position: absolute;
   top: 50%;
+  left: 50%;
   -ms-transform: translate(0%, -50%);
   transform: translate(0%, -50%);
   padding-top: 30px;
@@ -612,6 +613,14 @@ html p {
 .buy-bar .btn:hover {
   filter: brightness(90%);
   color: #FFFFFF !important;
+}
+@media (max-width: 960px) {
+  .buy-bar .btn {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
 }
 .buy-bar p {
   position: absolute;

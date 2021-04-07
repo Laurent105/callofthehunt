@@ -592,6 +592,7 @@ text-shadow: 0px 3px 0px rgba(253, 58, 59, 0.61);
     .btn{
         position: absolute;
         top: 50%;
+        left: 50%;
         -ms-transform: translate(0%, -50%);
         transform: translate(0%, -50%);
         padding-top: 30px;
@@ -612,6 +613,14 @@ text-shadow: 0px 3px 0px rgba(253, 58, 59, 0.61);
     .btn:hover{
         filter: brightness(90%);
         color: #FFFFFF !important;
+    }
+    @media (max-width: 960px) { 
+        .btn{
+            position: absolute;
+            top: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
     }
     p{
         position: absolute;
