@@ -836,6 +836,10 @@ html p {
   padding: 0 22px !important;
 }
 
+#mce-error-response {
+  color: #000;
+}
+
 .input-name1,
 .input-email1 {
   position: relative;
