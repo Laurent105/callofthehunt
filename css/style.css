@@ -397,7 +397,7 @@ html p {
   position: absolute;
   right: -8px;
   top: 0;
-  background: url(../img/down.png);
+  background: url(../img/down.webp);
   height: 280px;
   width: 16px;
 }
@@ -557,7 +557,7 @@ html p {
 }
 
 .schedule-block {
-  background-image: url(../img/schedule-bg.png);
+  background-image: url(../img/schedule-bg.webp);
   height: 1070px;
   padding-top: 176px;
   position: relative;
@@ -970,7 +970,7 @@ html p {
   -webkit-box-shadow: 0px 10px 24px rgba(255, 0, 0, 0.08);
           box-shadow: 0px 10px 24px rgba(255, 0, 0, 0.08);
   border-radius: 5px;
-  background: url(../img/funded.png);
+  background: url(../img/funded.webp);
   -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
       -ms-transform: matrix(1, 0, 0, 1, 0, 0);
           transform: matrix(1, 0, 0, 1, 0, 0);
@@ -1182,7 +1182,7 @@ html p {
 }
 
 .moose-main .carousel-background {
-  background-image: url(../img/carousel-background.png);
+  background-image: url(../img/carousel-background.webp);
 }
 
 #carouselPicture {
