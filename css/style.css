@@ -2006,15 +2006,6 @@ html p {
             align-items: center;
   }
 
-  .buy-bar {
-    /*.btn{
-            position: absolute;
-            top: 50%;
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-        }*/
-  }
-
   .blog-main {
     padding-bottom: 100px;
   }
