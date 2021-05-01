@@ -1,43 +1,72 @@
+$("body").children().each(function() {
+  document.body.innerHTML = document.body.innerHTML.replace(/\u2028/g, ' ');
+});
+
+$('.reviews-slider').slick({
+  accessibility: false,
+  centerMode: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  variableWidth: true,
+  centerPadding: '0',
+  responsive: [{
+    breakpoint: 1700,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    }
+  }, {
+    breakpoint: 767,
+    settings: {
+      slidesToShow: 1,
+    }
+  }]
+});
+
+$( ".reviews-slider__photo-wrapper.slick-current" ).siblings().addClass('sibling');
+
+$(document).ready(function () {
+	$('.accordion-header').click(function (){
+		$(this).toggleClass('in').next().slideToggle();
+		$('.accordion-header').not(this).removeClass('in').next().slideUp();
+	})
+});
+
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 0.1){  
+      $('.header').addClass("sticky");
+  }
+  else{
+      $('.header').removeClass("sticky");
+  }
+});
+
+var $btnTop = $(".back_To_Top")
+
+$(window).on('scroll', function() {
+  if ($(this).scrollTop() > $('header').height() + $('.episode').height()) {
+   $btnTop.fadeIn(100);
+  } else {
+   $btnTop.fadeOut(100);
+  }
+});
+ 
+ /* ARROW SCROLL */
+$btnTop.on('click', function() {
+  $('html, body').animate({
+   scrollTop: 0
+  }, 700);
+});
+
 $(document).ready(function(){
-
-	var $bg_dark = $('.bg-dark');
-	var bg_state = null;
-	var scroll_white = 100;
-	var scroll_dark = $(document).height();
-	console.log(scroll_dark);
-
-	$(window).scroll(function() {
-		var scroll_current = $(this).scrollTop();
-		if (scroll_current == scroll_white) {
-			console.log(1);
-			if (bg_state != 'white') {
-				bg_state = 'white';
-				$bg_dark.stop().animate({
-					opacity: 0
-				});
+	// menu click event
+	$('.header-menu').click(function() {
+		$(this).toggleClass('act');
+			if($(this).hasClass('act')) {
+				$('.header-nav').addClass('act');
 			}
-		} else if ((scroll_current) < (scroll_dark/2)) {
-			console.log(2);
-			if (bg_state != 'dark') {
-				bg_state = 'dark';
-				$bg_dark.stop().animate({
-					opacity: 1
-				},3000);
+			else {
+				$('.header-nav').removeClass('act');
 			}
-		} else if ((scroll_current) > (scroll_dark/2)) {
-			console.log(3);
-			if (bg_state != 'white') {
-				bg_state = 'white';
-				$bg_dark.stop().animate({
-					opacity: 0
-				},3000);
-			}
-		} else {
-			console.log(4);
-			bg_state = null;
-			$bg_dark.stop().animate({
-				opacity: (scroll_current - scroll_white) / (scroll_dark - scroll_white)
-			});
-		}
 	});
 });
