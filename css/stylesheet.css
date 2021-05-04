@@ -2430,3 +2430,8 @@ input[type="search"] {
 .webp .schedule-block { background-image: url(../img/schedule-bg.webp); }
 
 .webp .crowdfunding { background-image: url(../img/faq.webp); }
+
+.symbols-main{
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
