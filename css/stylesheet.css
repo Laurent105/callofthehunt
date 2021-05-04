@@ -390,6 +390,11 @@ input[type="search"] {
   margin: 0 20px;
   white-space: nowrap;
 }
+.offer-btn a {
+  margin: 0 20px;
+  white-space: nowrap;
+  text-align: center;
+}
 
 .offer-btn .offer-more {
   padding: 25.5px 60px;
@@ -1952,6 +1957,10 @@ input[type="search"] {
     margin: 0 15px;
   }
 
+  .offer-btn a {
+    margin: 0 15px;
+    text-align: center;
+  } 
   .offer-btn .offer-more {
     padding: 20px 35px;
   }
@@ -2081,6 +2090,11 @@ input[type="search"] {
 
   .offer-btn button {
     margin-bottom: 40px;
+  }
+
+  .offer-btn a {
+    margin-bottom: 40px;
+    text-align: center;
   }
 
   .offer-btn {
