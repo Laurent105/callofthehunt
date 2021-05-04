@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
     <title>Call Of The Hunt – настольная игра-квест о загадочных убийств</title>
@@ -45,39 +45,38 @@
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NH5RTLC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-<!-- Header BEGIN-->
-<header class="header pages">
-  <nav class="navbar container navbar-expand-lg navbar-dark">
-    <a class="navbar-brand" href="/"><img src="img/favicon54x54.webp" alt=""></a>
-    <button 
-      class="navbar-toggler collapsed"
-      type="button"
-      data-bs-target="#navbarNavDropdown"
-      data-bs-toggle="collapse"
-      aria-controls="navbarNavDropdown" 
-      aria-expanded="false"
-      aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav d-flex justify-content-between">
-        <li class="nav-item">
-          <a class="nav-link white-text navbar-right" aria-current="page" href="about">О компании</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link white-text navbar-right" aria-current="page" href="delivery">Доставка и оплата</a>
-        </li>
-        <li class="nav-item last-item">
-          <a class="btn" href="/symbols" role="button">Сдать результаты</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+<!--HEADER BEGIN-->
+<header class="header" id="header">
+  <div class="container">
+      <a href="/" class="header-logo">
+          <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="logo"></picture>
+          <span>Call of the hunt</span>
+      </a>
+      <nav class="header-nav">
+          <a href="/" class="header-nav-logo">
+              <picture>
+                  <source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="logo">
+              </picture>
+              <span>Call of the hunt</span>
+          </a>
+          <ul>
+              <li><a href="/#whatisthat">Что это такое?</a></li>
+              <li><a href="/#whatisinside">Что внутри?</a></li>
+              <li><a href="/symbols">Сдать результаты</a></li>
+          </ul>
+          <button class="header-buy btn-main" data-role="shiptor_widget_add_basket" data-id="FF6040318" data-q="1">Купить</button>
+      </nav>
+      <button class="header-buy btn-main" data-role="shiptor_widget_add_basket" data-id="FF6040318" data-q="1">Заказать</button>
+      <button class="header-menu">
+          <picture><source srcset="img/menu.webp" type="image/webp"><img class="header-menu-dots" src="img/menu.png" alt="menu"></picture>
+          <picture><source srcset="img/close.webp" type="image/webp"><img class="header-menu-close" src="img/close.png" alt="menu"></picture>
+      </button>
+  </div>
 </header>
-<!-- Header END-->
+<!--HEADER END-->
 
 <!-- About Main BEGIN-->
-<div class="about-main container-fluid">
+<div class="about-separate-main container-fluid">
   <div class="about-header">
     <div class="row">
       <div class="col-xl-2"></div>
@@ -118,42 +117,93 @@
 <!-- About Main END-->
 
 
-<!-- Footer BEGIN-->
-<footer class="main-footer">
+<!--FOOTER BEGIN-->
+<footer class="footer" id="footer">
   <div class="container">
-    <div class="row">
-      <div class="col-sm-3 col-md">
-        <a href="/"><img src="img/footerlogo.png" alt=""></a>
-        <br><br>
-        <a href="https://vk.com/callofthehunt" target="_blank"><img src="img/vkfooter.png" alt=""></a>
-        <a href="https://www.facebook.com/COTHgame" target="_blank"><img src="img/facebookfooter.png" alt=""></a>
-        <a href="https://twitter.com/COTHgame" target="_blank"><img src="img/twitterfooter.png" alt=""></a>
+      <div class="footer-links">
+          <a href="/" class="footer-logo">
+              <picture>
+                  <source srcset="img/footerlogo.webp" type="image/webp">
+                  <img src="img/footerlogo.png" alt="footerlogo">
+              </picture>
+          </a>
+          <ul>
+              <li>
+                  <a href="https://vk.com/callofthehunt" target="_blank">
+                      <picture>
+                          <source srcset="img/vkfooter.webp" type="image/webp">
+                          <img src="img/vkfooter.png" alt="vk">
+                      </picture>
+                  </a>
+              </li>
+              <li>
+                  <a href="https://www.facebook.com/COTHgame" target="_blank">
+                      <picture>
+                          <source srcset="img/facebookfooter.webp" type="image/webp">
+                          <img src="img/facebookfooter.png" alt="facebook">
+                      </picture>
+                  </a>
+              </li>
+              <li>
+                  <a href="https://twitter.com/COTHgame" target="_blank">
+                      <picture>
+                          <source srcset="img/twitterfooter.webp" type="image/webp">
+                          <img src="img/twitterfooter.png" alt="twitter">
+                      </picture>
+                  </a>
+              </li>
+          </ul>
       </div>
-      <div class="col-sm-3 col-md">
-        <h5>Контакты</h5>
-        <a href="mailto:hello@callofthehunt.com">hello@callofthehunt.com</a><br>
-        <a href="tel:89686475470">+7 (968) 647‑54‑70</a><br>
-        <p>Отвечаем на звонки с 12 до 18</p>
+      <div class="footer-contacts">
+          <h5>Контакты</h5>
+          <a href="mailto:hello@callofthehunt.com">hello@callofthehunt.com</a>
+          <br>
+          <a href="tel:89686475470">+7 (968) 647‑54‑70</a>
+          <br>
+          <p>Отвечаем на звонки с 12 до 18</p>
       </div>
-      <div class="col-sm-3 col-md">
-        <h5>Об игре</h5>
-        <a href="/press-kit">Press-kit</a><br>
-        <a href="/map">Карта склада</a><br>
-        <a href="/blog">Блог</a>
+      <div class="footer-about">
+          <h5>Об игре</h5>
+          <ul>
+              <li><a href="/press-kit">Press-kit</a></li>
+              <li><a href="/delivery">Доставка</a></li>
+              <li><a href="/about">О компании</a></li>
+          </ul>
       </div>
-      <div class="col-sm-3 col-md">
-        <h5>Принимаем к оплате</h5>
-        <img src="img/yamoney.png" alt="">
-        <img src="img/master.png" alt="">
-        <img src="img/mir.png" alt="">
-        <img src="img/visa.png" alt=""><br>
-        <a href="/privacy-policy">Политика конфиденциальности</a><br>
-        <p>(c) 2021 - Call of the Hunt</p>
+      <div class="footer-privacy">
+          <h5>Принимаем к оплате</h5>
+          <ul>
+              <li>
+                  <picture>
+                      <source srcset="img/yamoney.webp" type="image/webp">
+                      <img src="img/yamoney.png" alt="yamoney">
+                  </picture>
+              </li>
+              <li>
+                  <picture>
+                      <source srcset="img/master.webp" type="image/webp">
+                      <img src="img/master.png" alt="master">
+                  </picture>
+              </li>
+              <li>
+                  <picture>
+                      <source srcset="img/mir.webp" type="image/webp">
+                      <img src="img/mir.png" alt="mir">
+                  </picture>
+              </li>
+              <li>
+                  <picture>
+                      <source srcset="img/visa.webp" type="image/webp">
+                      <img src="img/visa.png" alt="visa">
+                  </picture>
+              </li>
+          </ul>
+          <a href="/privacy-policy">Политика конфиденциальности</a>
+          <p>(c) 2021 - Call of the Hunt</p>
       </div>
-    </div>
   </div>
 </footer>
-<!-- Footer END-->
+<!--FOOTER END-->
 
 <!--Bootstrap BEGIN-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
