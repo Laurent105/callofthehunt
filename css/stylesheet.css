@@ -256,7 +256,7 @@ input[type="search"] {
   background: #000;
   height: 113px;
   color: #fff;
-  z-index: 999999;
+  z-index: 900;
 }
 
 .header a {
@@ -349,7 +349,6 @@ input[type="search"] {
   padding-top: 258px;
   position: relative;
   z-index: 100;
-  margin-top: 113px;
 }
 
 .offer-main {
@@ -1446,7 +1445,7 @@ input[type="search"] {
   position: fixed;
   right: 300px;
   bottom: 80px;
-  z-index: 99999;
+  z-index: 900;
   display: none;
 }
 
@@ -1731,7 +1730,7 @@ input[type="search"] {
             align-items: center;
     background: 0;
     position: relative;
-    z-index: 999999;
+    z-index: 900;
     padding: 0;
     margin-left: 28px;
   }
