@@ -2513,6 +2513,10 @@ input[type="search"] {
     position: none;
 }
 
+.press-kit-header{
+  position: fixed;
+}
+
 .team-img{
   padding-top: 10px;
   padding-bottom: 10px;
