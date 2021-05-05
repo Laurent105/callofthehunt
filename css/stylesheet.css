@@ -437,6 +437,15 @@ input[type="search"] {
   margin: auto;
 }
 
+.anchor-margin{
+  display: block;
+  height: 130px;
+}
+.inside-margin{
+  display: block;
+  height: 130px;
+}
+
 .about-img {
   position: absolute;
   z-index: 120;
@@ -1300,7 +1309,8 @@ input[type="search"] {
 }
 
 .no-webp .crowdfunding {
-  background-image: url("../img/faq.jpg"); }
+  background-image: url("../img/faq.jpg");
+}
 
 .crowdfunding {
   position: relative;
@@ -2442,7 +2452,7 @@ input[type="search"] {
 }
 
 .about-main{
-  padding-top: 150px;
+  padding-top: 0px;
   padding-bottom: 150px;
 }
 
