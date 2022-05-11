@@ -1,590 +1,375 @@
-<!doctype html>
-<html lang="ru">
+<!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
+<!--  Last Published: Wed May 11 2022 11:35:24 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="6273caa69828d50fdab3d8e1" data-wf-site="627372275466bb6ec3027b70">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Call Of The Hunt – настольная игра-головоломока о загадочных убийств</title>
-<!--Meta start-->
-<meta name="description" content="Необычная настольная игра, где вам предстоит расследовать серию загадочных убийств, которые к вам домой отправляет маньяк самолично!">
-<meta property="og:locale" content="en_US">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Call Of The Hunt – настольная игра-головоломока о расследовании загадочных убийств">
-<meta property="og:description" content="Необычная настольная игра, где вам предстоит расследовать серию загадочных убийств, которые к вам домой отправляет маньяк самолично!">
-<meta property="og:url" content="https://www.callofthehunt.com/">
-<meta property="og:site_name" content="Call of the Hunt">
-<meta property="article:publisher" content="https://www.facebook.com/COTHgame/">
-<meta property="og:image" content="img/kickstarter-cover-v1.webp">
-<meta property="og:image:width" content="1024">
-<meta property="og:image:height" content="576">
-<meta property="fb:app_id" content="587938521944045">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="img/kickstarter-cover-v1.webp">
-<meta name="twitter:creator" content="@COTHgame">
-<meta name="twitter:site" content="@COTHgame">
-<!--End Meta-->
-
-<!--Icons-->
-<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-<link rel="apple-touch-icon" sizes="180x180" href="img/favicon114x114.ico">
-<link rel="apple-touch-icon" sizes="152x152" href="img/favicon72x72.ico">
-<link rel="apple-touch-icon" sizes="167x167" href="img/favicon144x144.ico">
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<link rel="stylesheet" href="css/stylesheet.css">
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NH5RTLC');
-</script>
-<!-- End Google Tag Manager -->
-<meta name="facebook-domain-verification" content="4pfi64enh9giirtmzwlfz4sy9qay5i" />
-<meta name="yandex-verification" content="bfddf0ed151479e1" />
+  <meta charset="utf-8">
+  <title>Call of the</title>
+  <meta content="https://uploads-ssl.webflow.com/627372275466bb6ec3027b70/627b6dfab9a347965c213d18_og-2.png" property="og:image">
+  <meta content="https://uploads-ssl.webflow.com/627372275466bb6ec3027b70/627b6dfab9a347965c213d18_og-2.png" property="twitter:image">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/call-of-the.webflow.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic","Montserrat Alternates:100,200,regular,500,600,700,800,900:cyrillic,latin"]  }});</script>
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
 </head>
-
-<body class="webp">
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NH5RTLC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-<!--HEADER BEGIN-->
-<header class="header" id="header">
-<div class="container">
-    <a href="/" class="header-logo">
-        <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="logo"></picture>
-        <span>Call of the hunt</span>
-    </a>
-    <nav class="header-nav">
-        <a href="/" class="header-nav-logo">
-            <picture>
-                <source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="logo">
-            </picture>
-            <span>Call of the hunt</span>
-        </a>
-        <ul>
-            <li><a href="/#whatisthat">Что это такое?</a></li>
-            <li><a href="/#whatisinside">Что внутри?</a></li>
-            <li><a href="/symbols">Сдать результаты</a></li>
-        </ul>
-        <button class="header-buy btn-main" data-role="shiptor_widget_add_basket" data-id="FF6040318" data-q="1">Купить</button>
-    </nav>
-    <button class="header-buy btn-main" data-role="shiptor_widget_add_basket" data-id="FF6040318" data-q="1">Заказать</button>
-    <button class="header-menu">
-        <picture><source srcset="img/menu.webp" type="image/webp"><img class="header-menu-dots" src="img/menu.png" alt="menu"></picture>
-        <picture><source srcset="img/close.webp" type="image/webp"><img class="header-menu-close" src="img/close.png" alt="menu"></picture>
-    </button>
-</div>
-</header>
-<!--HEADER END-->
-
-<!--OFFER BEGIN-->
-<section class="offer" id="offer">
-    <div class="container">
-        <div class="offer-main">
-            <span>Настольная игра-квест</span>
-            <h1>CALL OF THE HUNT</h1>
-            <p>Тук-тук. Вам посылка ... от Маньяка!</p>
-        </div>
-        <div class="offer-btn">
-            <a href="#whatisthat" class="offer-more btn-line">Узнать подробнее</a>
-            <button class="offer-buy btn-main" data-role="shiptor_widget_add_basket" data-id="FF6040318" data-q="1">Заказать</button>
-        </div>
-        <div class="about-main" id="about">
-            <a class="anchor-margin" id="whatisthat"></a>
-            <h2>ЧТО ЭТО ТАКОЕ?</h2>
-            <p>Call of the Hunt - это новый захватывающий <br>формат: смесь привычной настольной игры, детективного триллера <br> и квеста в реальности. Это ужасающая история, рассказанная через игру-головоломку.</p>
-            <p class="last-txt">Это настоящий квест в коробке: загадочные <br>предметы, письма, фотографии, журналы и даже кодовый замок. <br>Разгадайте все головоломки, найдите спрятанный шифр, <br>чтобы остановить Маньяка!</p>
-            <button class="about-buy btn-main" data-role="shiptor_widget_add_basket" data-id="FF6040318" data-q="1">Заказать</button>
-            <br>
-            <h2>1600 руб</h2>
-        </div>
-        <picture><source srcset="img/bg2.webp" type="image/webp"><img class="about-img" src="img/bg2.png" alt="bg"></picture>
-        <picture><source srcset="img/box2.webp" type="image/webp"><img class="about-img-2" src="img/box2.png" alt="bg"></picture>
-        <picture><source srcset="img/keys.webp" type="image/webp"><img class="about-key" src="img/keys.png" alt="bg"></picture>
+<body class="body">
+  <div data-animation="default" class="navbar w-nav" data-easing2="ease" data-easing="ease" data-collapse="medium" role="banner" data-no-scroll="1" data-duration="400" data-doc-height="1">
+    <div class="container container-navbar">
+      <a href="index.html" aria-current="page" class="brand w-nav-brand w--current"><img loading="lazy" src="images/Logo-xd.svg" alt="" class="image-6"></a>
+      <div class="menu-button w-nav-button">
+        <div class="icon-2 w-icon-nav-menu"></div>
+      </div>
+      <nav role="navigation" class="nav-menu w-clearfix w-nav-menu">
+        <a href="#about" class="nav-link w-nav-link">Об игре</a>
+        <a href="#inside" class="nav-link w-nav-link">Что внутри</a>
+        <a href="#" class="nav-link w-nav-link">Сдать результаты</a>
+        <a href="#" class="button button-navbar w-button">Заказать</a>
+      </nav>
     </div>
-</section>
-<!--OFFER END-->
-
-<!--EPISODE BEGIN-->
-<section class="episode" id="episode">
-    <div class="container">
-        <div class="episode-intro">
-            <a class="inside-margin" id="whatisinside"></a>
-            <h2> ЧТО ВНУТРИ?</h2>
-            <p>Вы получите посылку от Маньяка, полную зашифрованных посланий и загадок. Настоящий квест у вас дома! Помните, все предметы в коробке имеют значение и сыграют в нужный момент.</p>
+  </div>
+  <div class="section section-hero">
+    <div class="row row-flex-center w-row">
+      <div class="column w-col w-col-6">
+        <h1 class="h2">Настольная игра-квест</h1>
+        <h2 class="h2-hero">Call of the hunt</h2>
+        <div class="container-button-hero">
+          <a href="#" class="button button-inline button-inline-right-margin w-button">Об игре</a>
+          <a href="#" class="button w-button">Заказать</a>
         </div>
-        <div class="episode-main">
-            <ul class="episode-main-list list-left">
-                <li>Контейнер с замком <span>1</span></li>
-                <li>Разворот газеты <span>2</span></li>
-                <li>Карта <span>3</span></li>
-                <li>Оригами <span>4</span></li>
-                <li>Разворот журнала <span>5</span> </li>
-            </ul>
-            <div class="red-circle-first">
-                <picture>
-                    <source srcset="img/item.webp" type="image/webp">
-                    <img src="img/item.png" alt="item" class="img-fluid">
-                </picture>
-                <picture>
-                    <source srcset="img/circle.webp" type="image/webp">
-                    <img src="img/circle.png" alt="circle" class="img-circle">
-                </picture>
-            </div>
-            <ul class="episode-main-list list-right">
-                <li>Коробка с загадками <span>6</span></li>
-                <li>Булавки <span>7</span></li>
-                <li>Фотографии <span>8</span></li>
-                <li>План <span>9</span></li>
-                <li>Четыре письма <span>10</span></li>
-            </ul>
-        </div>
-        <picture>
-            <source srcset="img/Locker.webp" type="image/webp">
-            <img class="about-img2" src="img/Locker.png" alt="bg">
-        </picture>
-        </div>
-</section>
-<!--EPISODE END-->
-
-<!--REVIEWS BEGIN-->
-<section class="reviews" id="reviews">
-    <div class="container">
-        <div class="reviews-intro">
-            <h2>ОТЗЫВЫ ИГРОКОВ</h2>
-        </div>
-        <div class="reviews-slider">
-            <div class="reviews-slider__item">
-                <a class="reviews-slider__photo-wrapper" href="#">
-                    <picture>
-                        <source srcset="img/face.webp" type="image/webp">
-                        <img src="img/face.webp" alt="" class="reviews-slider__photo" />
-                    </picture>
-                </a>
-                <div class="reviews-slider__text">
-                    <h5 class="reviews-slider__author-name">Виталий Т.</h5>
-                        <div class="reviews-slider__message">
-                            <p>Интересный опыт похожий на настоящее расследование. Крутой интерактив с сайтом ****** и в целом с интернет. Когда логика сходится с вашей, загадки (нахождение ответов на них) были очень интересны.</p>
-                        </div>
-                </div>
-            </div>
-            <div class="reviews-slider__item">
-                <a class="reviews-slider__photo-wrapper" href="#">
-                    <picture>
-                        <source srcset="img/face.webp" type="image/webp">
-                        <img src="img/face.webp" alt="" class="reviews-slider__photo" />
-                    </picture>
-                </a>
-                <div class="reviews-slider__text">
-                    <h5 class="reviews-slider__author-name">Slowwalker</h5>
-                    <div class="reviews-slider__message">
-                        <p>Первое ощущение - квеструм в коробке. При том сама коробка тоже играет. Компоненты, в целом, интересные, красивые, приятно изучать.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="reviews-slider__item">
-                <a class="reviews-slider__photo-wrapper" href="#">
-                    <picture>
-                        <source srcset="img/face.webp" type="image/webp">
-                        <img src="img/face.webp" alt="" class="reviews-slider__photo" />
-                    </picture>
-                </a>
-                <div class="reviews-slider__text">
-                    <h5 class="reviews-slider__author-name">regspam88</h5>
-                    <div class="reviews-slider__message">
-                        <p>Очень атмосферная с нестандартными загадками.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="reviews-slider__item">
-                <a class="reviews-slider__photo-wrapper" href="#">
-                    <picture>
-                        <source srcset="img/face.webp" type="image/webp">
-                        <img src="img/face.webp" alt="" class="reviews-slider__photo" />
-                    </picture>
-                </a>
-                <div class="reviews-slider__text">
-                    <h5 class="reviews-slider__author-name">Антон М.</h5>
-                    <div class="reviews-slider__message">
-                        <p>Вы молодцы что добавили электронную составляющую в игру. Идея с ***** просто огонь. Все эти вымаранные вручную фотографии тоже добавляют антураж. Сложные загадки.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
+      <div class="w-col w-col-6"><img src="images/img-1.png" loading="lazy" width="1201" sizes="(max-width: 991px) 100vw, (max-width: 1279px) 78vw, 79vw" srcset="images/img-1-p-500.png 500w, images/img-1-p-800.png 800w, images/img-1-p-1080.png 1080w, images/img-1-p-1600.png 1600w, images/img-1-p-2000.png 2000w, images/img-1.png 2402w" alt="" class="image-hero"></div>
     </div>
-    <picture>
-        <source srcset="img/Locker-1.webp" type="image/webp">
-        <!--<img class="about-img3" src="img/Locker-1.png" alt="bg">-->
-    </picture>
-</section>
-<!--REVIEWS END-->
-
-<!--FAQ BEGIN-->
-<section class="faq-block">
-    <picture>
-        <source srcset="img/circle2.webp" type="image/webp">
-        <img src="img/circle2.png" class="circle2" alt="circle2">
-    </picture>
+  </div>
+  <div id="about" class="section">
     <div class="container">
-        <div class="faq-block-wrapper">
-            <div class="faq-block-accordion">
-                <h2 class="faq-block-title">ВАЖНЫЕ ВОПРОСЫ</h2>
-                <div class="accordion accordion-flush" id="FAQaccordion">
-                    <div class="accordion-item">
-                        <h3 class="accordion-header" id="flush-heading1">
-                            Что такое Call of the Hunt?
-                        </h3>
-                        <div class="panel_collapse" id="flush-collapse1">
-                            <p class="accordion-body">Call of the Hunt - это авторский проект настольной игры-квеста в стиле нео-нуар, который состоит из 6 эпизодов.
-                            <br><br>
-                            Каждый эпизод - это полноценная история одной жертвы. А все 6 игр вместе складываются в единую и законченную историю Маньяка с неожиданным финалом.</p>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h3 class="accordion-header" id="flush-heading2">
-                            Как играть?
-                        </h3>
-                        <div class="panel_collapse" id="flush-collapse2">
-                            <p class="accordion-body">Это игра-квест, в которой вы найдете предметные головоломки, текстовые и визуальные загадки. Кроме того, Вам понадобиться интернет, чтобы получить доступ к некоторым материалам.
-                            <br><br>
-                            Вам нужно получить шифр, который Маньяк спрятал в коробке. Для этого нужно решить все оставленные загадки. Разгадывая их, вы будете погружаться в детали и мотивы ужасного преступления. А в итоге получите доступ к финалу игры.</p>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h3 class="accordion-header" id="flush-heading3">
-                            Для кого подходит эта игра?
-                        </h3>
-                        <div class="panel_collapse" id="flush-collapse3">
-                            <p class="accordion-body">Эта игра подходит для людей разного уровня. Если вы уже опытный игрок и знакомы с квестами, то прохождение займет около 2х часов. Если вы менее опытны, то прохождение может занять около 4х часов.
-                            <br><br>
-                            В Call of the Hunt можно играть как одному, так и в компании до 4х человек. Однако, для наиболее интересного прохождения, рекомендуем играть вдвоем.
-                            <br><br>
-                            Обращаем ваше внимание, что игра не расчитана на детей. В ней есть изображения и описания актов жестокости.</p>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h3 class="accordion-header" id="flush-heading4">
-                            Можно ли сыграть несколько раз?
-                        </h3>
-                        <div class="panel_collapse" id="flush-collapse4">
-                            <p class="accordion-body">Call of the Hunt это игра, которая рассказывает историю. Проходить ее больше одного раза будет не так интересно, потому что вы уже будете знать все ответы. Для того чтобы пройти игру, необходимо провести некоторые необратимые изменения с материалами. Тем не менее, вы можете передать игру друзьям или знакомым, чтобы они тоже смогли окунуться в историю Маньяка.</p>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h3 class="accordion-header" id="flush-heading5">
-                            Что делать если вы застряли?
-                        </h3>
-                        <div class="panel_collapse" id="flush-collapse5">
-                            <p class="accordion-body">
-                            Загадки - это ключевая особенность игры. Возможно, другие игроки смогут Вам подсказать в наших социальных сетях.
-                            <br><br>
-                            <a href="https://vk.com/callofthehunt" target="_blank"><img src="img/vkfooter.webp" alt=""></a>
-                            <a href="https://www.facebook.com/COTHgame" target="_blank"><img src="img/facebookfooter.webp" alt=""></a>
-                            <a href="https://twitter.com/COTHgame" target="_blank"><img src="img/twitterfooter.webp" alt=""></a>
-                            <br><br>
-                            Если это не поможет, напишите нам на почту: <a style="color: black" href="mailto:hello@callofthehunt.com">hello@callofthehunt.com</a> и мы обязательно разберемся вместе.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="faq-block-form mailchimp-border">
-                <h2>Хотите получать новости первым?</h2>
-                <p>Подпишитесь на рассылку и получайте только самые важные новости о проекте и выгодные предложения.</p>
-                <!--Mailchimp Signup Form BEGIN-->
-                <div id="mc_embed_signup">
-                    <form action="https://stuff2wear.us7.list-manage.com/subscribe/post?u=6a5e05e806434e2bb1843c7b3&id=1a2950abb1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="clear" target="_blank" novalidate>
-                        <div id="mc_embed_signup_scroll">
-                            <div class="mc-field-group input-name1 clear">
-                                <picture>
-                                    <source srcset="img/Vector1.svg" type="image/webp">
-                                    <img src="img/Vector1.svg" alt="vector1">
-                                </picture>
-                                <input type="text" value="" name="NAME" id="mce-NAME" placeholder="Как Вас зовут?" class="mc-field-group-input valid" aria-invalid="false">
-                            </div>
-                            <div class="mc-field-group input-email1 clear">
-                                <picture>
-                                    <source srcset="img/Vector2.svg" type="image/webp">
-                                    <img src="img/Vector2.svg" alt="vector2">
-                                </picture>
-                                <input type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="Введите ваш имейл" class="mc-field-group-input">
-                            </div>
-                            <div class="clear">
-                                <input type="submit" value="ПОДПИСАТЬСЯ НА РАССЫЛКУ" name="subscribe" id="mc-embedded-subscribe" class="button">
-                            </div>
-                            <label class="catalog__choice-checkbox">
-                                <input type="checkbox" class="catalog__choice-cbox">
-                                    <span class="checkmark1"></span>
-                                    <span class="name">Я принимаю условия <a href="/privacy-policy">передачи информации</a></span>
-                            </label>
-                            <div id="mce-responses" class="clear">
-                                <div id="mce-error-response" style="display:none"></div>
-                                <div id="mce-success-response" style="display:none"></div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <script type='text/javascript' src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-                <script type='text/javascript'>
-                    (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email'; /*
-                    * Translated default messages for the $ validation plugin.
-                    * Locale: RU
-                    */
-                    $.extend($.validator.messages, {
-                        required: "Это поле необходимо заполнить.",
-                        remote: "Пожалуйста, введите правильное значение.",
-                        email: "Пожалуйста, введите корректный адрес электронной почты.",
-                        url: "Пожалуйста, введите корректный URL.",
-                        date: "Пожалуйста, введите корректную дату.",
-                        dateISO: "Пожалуйста, введите корректную дату в формате ISO.",
-                        number: "Пожалуйста, введите число.",
-                        digits: "Пожалуйста, вводите только цифры.",
-                        creditcard: "Пожалуйста, введите правильный номер кредитной карты.",
-                        equalTo: "Пожалуйста, введите такое же значение ещё раз.",
-                        accept: "Пожалуйста, выберите файл с правильным расширением.",
-                        maxlength: $.validator.format("Пожалуйста, введите не больше {0} символов."),
-                        minlength: $.validator.format("Пожалуйста, введите не меньше {0} символов."),
-                        rangelength: $.validator.format("Пожалуйста, введите значение длиной от {0} до {1} символов."),
-                        range: $.validator.format("Пожалуйста, введите число от {0} до {1}."),
-                        max: $.validator.format("Пожалуйста, введите число, меньшее или равное {0}."),
-                        min: $.validator.format("Пожалуйста, введите число, большее или равное {0}.")
-                        });
-                        }(jQuery));var $mcj = jQuery.noConflict(true);
-                    </script>
-                <!--End mc_embed_signup-->
-                <!--Mailchimp Signup Form END-->
-            </div>
-        </div>
+      <h2 class="h2">Что это?</h2>
     </div>
-</section>     
-<!--FAQ END-->
-
-<!--SCHEDULE BEGIN-->
-<section class="schedule-block">
+    <div class="row w-row">
+      <div class="column w-col w-col-10 w-col-stack w-col-small-small-stack">
+        <p class="paragraph-large">Call of the Hunt — это новый захватывающий формат: смесь привычной настольной игры, детективного триллера и квеста в реальности. Это ужасающая история, рассказанная через  игру-головоломку.</p>
+      </div>
+      <div class="column w-col w-col-2 w-col-stack w-col-small-small-stack"></div>
+    </div>
+    <div class="row w-row">
+      <div class="column w-col w-col-2"></div>
+      <div class="column w-col w-col-8">
+        <p class="paragraph">Это настоящий квест в коробке: загадочные предметы, письма, фотографии, журналы и даже кодовый замок. Разгадайте все головоломки, найдите спрятанный шифр, чтобы остановить Маньяка!</p>
+        <a href="#" class="button w-button">Заказать за 2400₽</a>
+      </div>
+      <div class="column w-col w-col-2"></div>
+    </div>
+    <div class="container-kit-image"><img src="images/img-2.png" loading="lazy" width="1426" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, 97vw" srcset="images/img-2-p-500.png 500w, images/img-2-p-800.png 800w, images/img-2-p-1080.png 1080w, images/img-2-p-1600.png 1600w, images/img-2-p-2000.png 2000w, images/img-2.png 2852w" alt="" class="image-2"></div>
+  </div>
+  <div id="inside" class="section section-forest-bg">
     <div class="container">
-        <div class="schedule-block-main">
-            <div class="schedule-block-info">
-                <h2>ПРОДОЛЖЕНИЕ ИСТОРИИ</h2>
-                <p>В каждом эпизоде вас ждет рассказ об одной жертве Маньяка. Но только все 6 игр вместе складываются в единую и законченную историю с неожиданным финалом.</p>
-                <a class="schedule-block-btn btn-main" data-role="shiptor_widget_add_basket" data-id="FF6040318" data-q="1" href="#" role="button">Заказать</a>
+      <h2 class="h2">Что внутри?</h2>
+      <p class="paragraph-large">Вы получите посылку от Маньяка, полную зашифрованных посланий и загадок. Настоящий квест у вас дома! Помните, все предметы в коробке имеют значение и сыграют в нужный момент.</p>
+    </div>
+    <div class="row w-row">
+      <div class="column w-col w-col-3 w-col-small-6 w-col-tiny-6">
+        <div class="container-feature">
+          <h2 class="h2 h2-white">Разворот газеты</h2>
+        </div>
+      </div>
+      <div class="column w-col w-col-3 w-col-small-6 w-col-tiny-6">
+        <div class="container-feature">
+          <h2 class="h2 h2-white">Разворот журнала</h2>
+        </div>
+      </div>
+      <div class="column w-col w-col-3 w-col-small-6 w-col-tiny-6">
+        <div class="container-feature">
+          <h2 class="h2 h2-white">Коробка с загадками</h2>
+        </div>
+      </div>
+      <div class="column w-col w-col-3 w-col-small-6 w-col-tiny-6">
+        <div class="container-feature">
+          <h2 class="h2 h2-white">Контейнер с замком</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row w-row">
+      <div class="column w-col w-col-3 w-col-small-6 w-col-tiny-6">
+        <div class="container-feature">
+          <h2 class="h2 h2-white">Оригами и булавки</h2>
+        </div>
+      </div>
+      <div class="column w-col w-col-3 w-col-small-6 w-col-tiny-6">
+        <div class="container-feature">
+          <h2 class="h2 h2-white">Четыре  письма</h2>
+        </div>
+      </div>
+      <div class="column w-col w-col-3 w-col-small-6 w-col-tiny-6">
+        <div class="container-feature">
+          <h2 class="h2 h2-white">Карта <br>и план</h2>
+        </div>
+      </div>
+      <div class="column w-col w-col-3 w-col-small-6 w-col-tiny-6">
+        <div class="container-feature">
+          <h2 class="h2 h2-white">Фотографии</h2>
+        </div>
+      </div>
+    </div>
+    <div class="container-kit-image"><img src="images/img-03.png" loading="lazy" width="1426" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, 97vw" srcset="images/img-03-p-500.png 500w, images/img-03-p-800.png 800w, images/img-03-p-1080.png 1080w, images/img-03-p-1600.png 1600w, images/img-03-p-2000.png 2000w, images/img-03.png 2852w" alt="" class="image"></div>
+  </div>
+  <div class="section">
+    <div class="row w-row">
+      <div class="column w-col w-col-1 w-col-small-small-stack"></div>
+      <div class="column w-col w-col-10 w-col-small-small-stack">
+        <div data-delay="3000" data-animation="slide" class="slider w-slider" data-autoplay="true" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="10" data-duration="500" data-infinite="true">
+          <div class="mask w-slider-mask">
+            <div class="w-slide">
+              <p class="paragraph-medium">Интересный опыт похожий на настоящее расследование. Крутой интерактив с сайтом ****** и в целом с интернет. Когда логика сходится с вашей, загадки (нахождение ответов на них) были очень интересны.</p>
+              <div class="h2">Антон М.</div>
             </div>
-            <div class="schedule-block-img">
-                <picture>
-                    <source srcset="img/moose-photo.webp" type="image/webp">
-                    <img src="img/moose-photo.png" alt="">
-                </picture>
-                <span>Эпизод 1 «Лосиха»</span>
+            <div class="w-slide">
+              <p class="paragraph-medium">Интересный опыт похожий на настоящее расследование. Крутой интерактив с сайтом ****** и в целом с интернет. Когда логика сходится с вашей, загадки (нахождение ответов на них) были очень интересны.</p>
+              <div class="h2">Антон М.</div>
             </div>
+          </div>
+          <div class="left-arrow w-slider-arrow-left">
+            <div class="w-icon-slider-left"></div>
+          </div>
+          <div class="right-arrow w-slider-arrow-right">
+            <div class="w-icon-slider-right"></div>
+          </div>
+          <div class="slide-nav w-slider-nav w-round"></div>
         </div>
-        <div class="photo-list">
-            <a class="photo-list-item">
-                <span class="photo-list-data">В разработке</span>
-                <picture>
-                    <source srcset="img/bear.webp" type="image/webp">
-                    <img src="img/bear.png" alt="bear">
-                </picture>
-                <h5>Эпизод 2 «Медведь»</h5>
-            </a>
-            <a class="photo-list-item">
-                <span class="photo-list-data">Планируется</span>
-                <picture>
-                    <source srcset="img/hyen.webp" type="image/webp">
-                    <img src="img/hyen.png" alt="hyen">
-                </picture>
-                <h5>Эпизод 3 «Гиена»</h5>
-            </a>
-            <a class="photo-list-item">
-                <span class="photo-list-data">Планируется</span>
-                <picture>
-                    <source srcset="img/tigress.webp" type="image/webp">
-                    <img src="img/tigress.png" alt="tigress">
-                </picture>
-                <h5>Эпизод 4 «Тигрица»</h5>
-            </a>
-            <a class="photo-list-item">
-                <span class="photo-list-data">Планируется</span>
-                <picture>
-                    <source srcset="img/wolf.webp" type="image/webp">
-                    <img src="img/wolf.png" alt="wolf">
-                </picture>
-                <h5>Эпизод 5 «Волк»</h5>
-            </a>
-            <a class="photo-list-item">
-                <span class="photo-list-data">Планируется</span>
-                <picture>
-                    <source srcset="img/lynx.webp" type="image/webp">
-                    <img src="img/lynx.png" alt="lynx">
-                </picture>
-                <h5>Эпизод 6 «Рысь»</h5>
-            </a>
-        </div>
+      </div>
+      <div class="column w-col w-col-1 w-col-small-small-stack"></div>
     </div>
-</section>
-<!--SCHEDULE END-->
-
-<!--CROWDFUNDING BEGIN-->
-<section class="crowdfunding" id="crowdfunding">
+  </div>
+  <div class="section">
+    <div class="container"></div>
+    <div class="row w-row">
+      <div class="column w-col w-col-3">
+        <h2 class="h2">Важные вопросы</h2>
+      </div>
+      <div class="column w-col w-col-9">
+        <div data-hover="false" data-delay="0" class="dropdown-qa w-dropdown">
+          <div class="dropdown-toggle w-dropdown-toggle">
+            <div class="icon w-icon-dropdown-toggle"></div>
+            <div class="h2 h2-white h2-white-no-margin">Что такое Call of the Hunt?</div>
+          </div>
+          <nav class="dropdown-list w-dropdown-list">
+            <p class="paragraph">Call of the Hunt - это авторский проект настольной игры-квеста в стиле нео-нуар, который состоит из 6 эпизодов.</p>
+            <p class="paragraph">Каждый эпизод - это полноценная история одной жертвы. А все 6 игр вместе складываются в единую и законченную историю Маньяка с неожиданным финалом.</p>
+          </nav>
+        </div>
+        <div class="div-block">
+          <div class="red-line"></div>
+        </div>
+        <div data-hover="false" data-delay="0" class="dropdown-qa w-dropdown">
+          <div class="dropdown-toggle w-dropdown-toggle">
+            <div class="icon w-icon-dropdown-toggle"></div>
+            <div class="h2 h2-white h2-white-no-margin">Как играть?</div>
+          </div>
+          <nav class="dropdown-list w-dropdown-list">
+            <p class="paragraph">Это игра-квест, в которой вы найдете предметные головоломки, текстовые и визуальные загадки. Кроме того, Вам понадобиться интернет, чтобы получить доступ к некоторым материалам.</p>
+            <p class="paragraph">Вам нужно получить шифр, который Маньяк спрятал в коробке. Для этого нужно решить все оставленные загадки. Разгадывая их, вы будете погружаться в детали и мотивы ужасного преступления. А в итоге получите доступ к финалу игры.</p>
+          </nav>
+        </div>
+        <div class="div-block">
+          <div class="red-line"></div>
+        </div>
+        <div data-hover="false" data-delay="0" class="dropdown-qa w-dropdown">
+          <div class="dropdown-toggle w-dropdown-toggle">
+            <div class="icon w-icon-dropdown-toggle"></div>
+            <div class="h2 h2-white h2-white-no-margin">Для кого подходит игра?</div>
+          </div>
+          <nav class="dropdown-list w-dropdown-list">
+            <p class="paragraph">Эта игра подходит для людей разного уровня. Если вы уже опытный игрок и знакомы с квестами, то прохождение займет около 2х часов. Если вы менее опытны, то прохождение может занять около 4х часов.</p>
+            <p class="paragraph">В Call of the Hunt можно играть как одному, так и в компании до 4х человек. Однако, для наиболее интересного прохождения, рекомендуем играть вдвоем.</p>
+            <p class="paragraph">Обращаем ваше внимание, что игра не расчитана на детей. В ней есть изображения и описания актов жестокости.</p>
+          </nav>
+        </div>
+        <div class="div-block">
+          <div class="red-line"></div>
+        </div>
+        <div data-hover="false" data-delay="0" class="dropdown-qa w-dropdown">
+          <div class="dropdown-toggle w-dropdown-toggle">
+            <div class="icon w-icon-dropdown-toggle"></div>
+            <div class="h2 h2-white h2-white-no-margin h2-white-no-margin-desk">Можно ли сыграть несколько раз?</div>
+            <div class="h2 h2-white h2-white-no-margin h2-white-no-margin-mobile">Можно ли сыграть<br>несколько раз?</div>
+          </div>
+          <nav class="dropdown-list w-dropdown-list">
+            <p class="paragraph">Call of the Hunt это игра, которая рассказывает историю. Проходить ее больше одного раза будет не так интересно, потому что вы уже будете знать все ответы. Для того чтобы пройти игру, необходимо провести некоторые необратимые изменения с материалами. Тем не менее, вы можете передать игру друзьям или знакомым, чтобы они тоже смогли окунуться в историю Маньяка.</p>
+          </nav>
+        </div>
+        <div class="div-block">
+          <div class="red-line"></div>
+        </div>
+        <div data-hover="false" data-delay="0" class="dropdown-qa w-dropdown">
+          <div class="dropdown-toggle w-dropdown-toggle">
+            <div class="icon w-icon-dropdown-toggle"></div>
+            <div class="h2 h2-white h2-white-no-margin h2-white-no-margin-desk">Что делать если вы застряли?</div>
+            <div class="h2 h2-white h2-white-no-margin h2-white-no-margin-mobile">Что делать если <br>вы застряли?</div>
+          </div>
+          <nav class="dropdown-list w-dropdown-list">
+            <p class="paragraph">Загадки - это ключевая особенность игры. Возможно, другие игроки смогут Вам подсказать в наших социальных сетях.</p>
+            <p class="paragraph">Если это не поможет, напишите нам на почту: <a href="mailto:hello@callofthehunt.com" class="link-paragraph">hello@callofthehunt.com</a> и мы обязательно разберемся вместе.</p>
+          </nav>
+        </div>
+        <div class="div-block">
+          <div class="red-line"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="red-bg-container w-clearfix">
+      <div class="red-bg">
+        <div class="row row-flex-center w-row">
+          <div class="column w-col w-col-5">
+            <p class="paragraph-large">ПОДПИШИТЕСЬ НА РАССЛЫЛКУ</p>
+            <p class="paragraph">Получайте только самые важные новости о проекте и выгодные предложения.</p>
+            <div class="w-form">
+              <form id="email-form" name="email-form" data-name="Email Form" method="get" class="form"><input type="text" class="field w-input" maxlength="256" name="name" data-name="Name" placeholder="Как вас зовут?" id="name" required=""><input type="email" class="field w-input" maxlength="256" name="Email" data-name="Email" placeholder="Эл. почта" id="Email" required=""><input type="submit" value="Подписаться" data-wait="Подождите..." class="button button-white w-button"></form>
+              <div class="w-form-done">
+                <div>Thank you! Your submission has been received!</div>
+              </div>
+              <div class="w-form-fail">
+                <div>Oops! Something went wrong while submitting the form.</div>
+              </div>
+            </div>
+          </div>
+          <div class="column w-col w-col-1"></div>
+          <div class="w-col w-col-6"><img src="images/img-04.png" loading="lazy" sizes="(max-width: 479px) 88vw, (max-width: 767px) 93vw, (max-width: 991px) 77vw, (max-width: 1279px) 69vw, 54vw" srcset="images/img-04-p-500.png 500w, images/img-04-p-800.png 800w, images/img-04-p-1080.png 1080w, images/img-04.png 1552w" alt="" class="image-3"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
     <div class="container">
-        <div class="crowdfunding-main">
-            <h2>КРАУДФАНДИНГ</h2>
-            <p>Кампания на платформе CrowdRepublic успешно завершилась! Экземпляры Первого эпизода уже были отправлены всем участникам.</p>
-            <picture>
-                <source srcset="img/croud.webp" type="image/webp">
-                <img src="img/croud.png" alt="croud">
-            </picture>
+      <h2 class="h2">Продолжение истории</h2>
+      <p class="paragraph-large">В каждом эпизоде вас ждет рассказ об одной жертве Маньяка. Но только все 6 игр вместе складываются в единую и законченную историю с неожиданным финалом.</p>
+      <a href="#" class="button w-button">Заказать</a>
+    </div>
+    <div class="row w-row">
+      <div class="column w-col w-col-4">
+        <div class="container-future-game game-1">
+          <div>
+            <h2 class="h2 h2-center h2-center-downcase">Эпизод #1</h2>
+            <p class="paragraph-large paragraph-large-center">Лосиха</p>
+          </div>
+          <div><img src="images/symbol-1.png" loading="lazy" width="210" alt=""></div>
+          <div></div>
         </div>
+      </div>
+      <div class="column w-col w-col-4">
+        <div class="container-future-game game-2">
+          <div>
+            <h2 class="h2 h2-center h2-center-downcase">Эпизод #2</h2>
+            <p class="paragraph-large paragraph-large-center">Медведь</p>
+          </div>
+          <div><img src="images/symbo2.png" loading="lazy" width="210" alt=""></div>
+          <div>
+            <p class="paragraph">В разработке</p>
+          </div>
+        </div>
+      </div>
+      <div class="column w-col w-col-4">
+        <div class="container-future-game game-3">
+          <div>
+            <h2 class="h2 h2-center h2-center-downcase">Эпизод #3</h2>
+            <p class="paragraph-large paragraph-large-center">Гиена</p>
+          </div>
+          <div><img src="images/symbol-3.png" loading="lazy" width="210" alt=""></div>
+          <div>
+            <p class="paragraph paragraph-grey">Планируется</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <picture>
-        <source srcset="img/croud2.webp" type="image/webp">
-        <img src="img/croud2.png" alt="croud" class="crowdfunding-img">
-    </picture>
-    <div class="crowdfunding-img2">
-        <picture>
-            <source srcset="img/screen2.webp" type="image/webp">
-            <img src="img/screen2.png" alt="bg">
-        </picture>
+    <div class="row w-row">
+      <div class="column w-col w-col-4">
+        <div class="container-future-game game-4">
+          <div>
+            <h2 class="h2 h2-center h2-center-downcase">Эпизод #4</h2>
+            <p class="paragraph-large paragraph-large-center">Тигрица</p>
+          </div>
+          <div><img src="images/symbol-4.png" loading="lazy" width="210" alt=""></div>
+          <div>
+            <p class="paragraph paragraph-grey">Планируется</p>
+          </div>
+        </div>
+      </div>
+      <div class="column w-col w-col-4">
+        <div class="container-future-game game-5">
+          <div>
+            <h2 class="h2 h2-center h2-center-downcase">Эпизод #5</h2>
+            <p class="paragraph-large paragraph-large-center">Волк</p>
+          </div>
+          <div><img src="images/symbol-5.png" loading="lazy" width="210" alt=""></div>
+          <div>
+            <p class="paragraph paragraph-grey">Планируется</p>
+          </div>
+        </div>
+      </div>
+      <div class="column w-col w-col-4">
+        <div class="container-future-game game-6">
+          <div>
+            <h2 class="h2 h2-center h2-center-downcase">Эпизод #6</h2>
+            <p class="paragraph-large paragraph-large-center">Рысь</p>
+          </div>
+          <div><img src="images/symbol-6.png" loading="lazy" width="210" alt=""></div>
+          <div>
+            <p class="paragraph paragraph-grey">Планируется</p>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
-<!--CROWDFUNDING END-->
-
-<!--FOOTER BEGIN-->
-<footer class="footer" id="footer">
+  </div>
+  <div class="section section-forest-bg-bottom">
     <div class="container">
-        <div class="footer-links">
-            <a href="/" class="footer-logo">
-                <picture>
-                    <source srcset="img/footerlogo.webp" type="image/webp">
-                    <img src="img/footerlogo.png" alt="footerlogo">
-                </picture>
-            </a>
-            <ul>
-                <li>
-                    <a href="https://vk.com/callofthehunt" target="_blank">
-                        <picture>
-                            <source srcset="img/vkfooter.webp" type="image/webp">
-                            <img src="img/vkfooter.png" alt="vk">
-                        </picture>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/COTHgame" target="_blank">
-                        <picture>
-                            <source srcset="img/facebookfooter.webp" type="image/webp">
-                            <img src="img/facebookfooter.png" alt="facebook">
-                        </picture>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/COTHgame" target="_blank">
-                        <picture>
-                            <source srcset="img/twitterfooter.webp" type="image/webp">
-                            <img src="img/twitterfooter.png" alt="twitter">
-                        </picture>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer-contacts">
-            <h5>Контакты</h5>
-            <a href="mailto:hello@callofthehunt.com">hello@callofthehunt.com</a>
-            <br>
-            <a href="tel:89686475470">+7 (968) 647‑54‑70</a>
-            <br>
-            <p>Отвечаем на звонки с 12 до 18</p>
-        </div>
-        <div class="footer-about">
-            <h5>Об игре</h5>
-            <ul>
-                <li><a href="/press-kit">Press-kit</a></li>
-                <li><a href="/delivery">Доставка</a></li>
-                <li><a href="/about">О компании</a></li>
-            </ul>
-        </div>
-        <div class="footer-privacy">
-            <h5>Принимаем к оплате</h5>
-            <ul>
-                <li>
-                    <picture>
-                        <source srcset="img/yamoney.webp" type="image/webp">
-                        <img src="img/yamoney.png" alt="yamoney">
-                    </picture>
-                </li>
-                <li>
-                    <picture>
-                        <source srcset="img/master.webp" type="image/webp">
-                        <img src="img/master.png" alt="master">
-                    </picture>
-                </li>
-                <li>
-                    <picture>
-                        <source srcset="img/mir.webp" type="image/webp">
-                        <img src="img/mir.png" alt="mir">
-                    </picture>
-                </li>
-                <li>
-                    <picture>
-                        <source srcset="img/visa.webp" type="image/webp">
-                        <img src="img/visa.png" alt="visa">
-                    </picture>
-                </li>
-            </ul>
-            <a href="/privacy-policy">Политика конфиденциальности</a>
-            <p>(c) 2021 - Call of the Hunt</p>
-        </div>
+      <h2 class="h2">Краудфандинг</h2>
+      <p class="paragraph-large">Кампания на платформе CrowdRepublic успешно завершилась! Экземпляры Первого эпизода уже были отправлены всем участникам.</p>
     </div>
-</footer>
-<!--FOOTER END-->
-
-<!--TECH PART BEGIN-->
-<div class="back_To_Top" title="go to top">
-    <picture>
-        <source srcset="img/up.svg" type="image/webp">
-        <img src="img/up.svg" alt="up">
-    </picture>
-</div>
-<script src="https://code.jquery.com/jquery-latest.min.js"></script>
-<script type="text/javascript" src="https://checkout.shiptor.ru/embed/order.js">
-</script>
-<!--Shiptor корзина BEGIN-->
-<div id="shiptor_widget" class="_shiptor_widget"
-    style="display:none;" data-url="https://widget.shiptor.ru/api"
-    data-basketShowOnAdd="0"
-    data-cod="1"
-    data-declaredCost="10"
-    data-detail="1"
-    data-round="floor"
-    data-css="https://checkout.shiptor.ru/embed/styles/css/order.css"
-    data-kladr="77000000000"
-    data-city="Москва"
-    data-country="Россия"
-    data-wk="ETGOCWP6HV6TPZKRUAQFNDXAO3C9026IVD1U103813"
-    data-basketPos="bottom">
-</div>
-<!--Shiptor корзина END-->
-<script>
-    var scrollToTopBtn = document.querySelector(".scrollToTopBtn")
-    var rootElement = document.documentElement
-    function handleScroll() {
-        // Do something on scroll
-        var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight
-        if ((rootElement.scrollTop / scrollTotal ) > 0.40) {
-            // Show button
-            scrollToTopBtn.classList.add("showBtn")
-        } else {
-            // Hide button
-            scrollToTopBtn.classList.remove("showBtn")
-        }
-    }
-    function scrollToTop() {
-        // Scroll to top logic
-        rootElement.scrollTo({
-        top: 0,
-        behavior: "smooth"
-        })
-    }
-    scrollToTopBtn.addEventListener("click", scrollToTop)
-    document.addEventListener("scroll", handleScroll)
-</script>
-<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="js/script.js"></script>
-<!--TECH PART END-->
+    <div class="row w-row">
+      <div class="column w-col w-col-3"><img src="images/img-4.png" loading="lazy" width="686" sizes="(max-width: 479px) 92vw, (max-width: 767px) 89vw, (max-width: 991px) 41vw, (max-width: 1279px) 42vw, 43vw" srcset="images/img-4-p-500.png 500w, images/img-4-p-800.png 800w, images/img-4-p-1080.png 1080w, images/img-4.png 1372w" alt="" class="image-4"></div>
+      <div class="column w-col w-col-9"><img src="images/screen.jpg" loading="lazy" width="1065" sizes="(max-width: 479px) 92vw, (max-width: 767px) 90vw, (max-width: 991px) 68vw, 70vw" srcset="images/screen-p-500.jpeg 500w, images/screen-p-800.jpeg 800w, images/screen-p-1080.jpeg 1080w, images/screen-p-1600.jpeg 1600w, images/screen.jpg 2130w" alt="" class="image-5"></div>
+    </div>
+  </div>
+  <div class="section section-footer">
+    <div class="row w-row">
+      <div class="column w-col w-col-4 w-col-stack">
+        <div class="text-footer">© Call of the Hunt, 2022</div>
+        <div class="footer-payment-container">
+          <div class="payment-system-container"><img src="images/iomoney-1.svg" loading="lazy" alt=""></div>
+          <div class="payment-system-container"><img src="images/mir-logo-1.svg" loading="lazy" alt=""></div>
+          <div class="payment-system-container"><img src="images/9055852_bxl_mastercard_icon-1.svg" loading="lazy" alt=""></div>
+          <div class="payment-system-container"><img src="images/406088_card_credit_visa_icon-1.svg" loading="lazy" alt=""></div>
+        </div>
+      </div>
+      <div class="column column-flex-vertical w-col w-col-2 w-col-stack">
+        <a href="about-game.html" class="text-footer">Об игре</a>
+        <a href="about.html" class="text-footer">О компании</a>
+        <a href="press-kit.html" class="text-footer">Press-kit</a>
+      </div>
+      <div class="column column-flex-vertical w-col w-col-3 w-col-stack">
+        <a href="delivery.html" class="text-footer">Доставка и оплата</a>
+        <a href="privacy.html" class="text-footer">Политика конфиденциальности</a>
+      </div>
+      <div class="column column-flex-vertical w-col w-col-3 w-col-stack">
+        <a href="mailto:hello@callofthehunt.com" class="text-footer">hello@callofthehunt.com</a>
+        <div class="footer-phone">
+          <a href="tel:+79686475470" class="text-footer">+7 (968) 647‑54‑70</a>
+          <div class="text-footer text-footer-grey">c 12 до 18</div>
+        </div>
+        <div class="footer-social">
+          <a href="#" class="container-sicial-icon w-inline-block"><img src="images/vk.svg" loading="lazy" alt=""></a>
+          <a href="#" class="container-sicial-icon w-inline-block"><img src="images/telegram.svg" loading="lazy" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=627372275466bb6ec3027b70" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
 </body>
 </html>
