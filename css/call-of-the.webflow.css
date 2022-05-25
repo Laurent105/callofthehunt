@@ -496,7 +496,7 @@
 .dropdown-toggle {
   width: 100%;
   padding: 5px 0px 0px 53px;
-  background-image: url('./images/fropdown-plus.svg');
+  background-image: url('/images/fropdown-plus.svg');
   background-position: 0% 50%;
   background-size: contain;
   background-repeat: no-repeat;
