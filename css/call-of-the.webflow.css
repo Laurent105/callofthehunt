@@ -569,31 +569,31 @@
 
 .container-future-game.game-1 {
   margin-top: 60px;
-  background-image: url('../images/game-1.jpg');
+  background-image: url('images/game-1.jpg');
 }
 
 .container-future-game.game-2 {
   margin-top: 140px;
-  background-image: url('../images/game-2.jpg');
+  background-image: url('images/game-2.jpg');
 }
 
 .container-future-game.game-3 {
   margin-top: 60px;
-  background-image: url('../images/game-3.jpg');
+  background-image: url('images/game-3.jpg');
 }
 
 .container-future-game.game-4 {
   margin-top: -80px;
-  background-image: url('../images/game-4.jpg');
+  background-image: url('images/game-4.jpg');
 }
 
 .container-future-game.game-5 {
-  background-image: url('../images/game-5.jpg');
+  background-image: url('images/game-5.jpg');
 }
 
 .container-future-game.game-6 {
   margin-top: -80px;
-  background-image: url('../images/game-6.jpg');
+  background-image: url('images/game-6.jpg');
 }
 
 .text-footer {
