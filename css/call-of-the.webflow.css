@@ -2266,3 +2266,223 @@
   font-style: normal;
   font-display: swap;
 }
+
+.shiptor_widget {
+  /*display: none;*/
+  color: #262626;
+  font-size: 14px;
+  line-height: 1.42857143;
+  font-family: Verdana, Tahoma, sans-serif;
+  height: 600px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.shiptor_widget ._shiptor_widget_panel_switch a {
+  text-decoration: none;
+}
+
+.shiptor_widget ._shiptor_widget_overlay {
+  display: none;
+}
+
+.shiptor_widget ._shiptor_widget_frame_pvz {
+  width: 100%;
+  max-width: 1500px;
+  top: 0;
+  height: 100%;
+}
+
+.shiptor_widget ._shiptor_widget_points_map ._shiptor_widget_group_settlement {
+  width: 100%;
+  padding-right: 40px;
+}
+
+.shiptor_widget ._shiptor_widget_settlement {
+  width: 100% !important;
+  border: 1px solid #808080;
+  padding: 4px;
+}
+
+.shiptor_widget ._shiptor_widget_points {
+  padding-bottom: 20px;
+}
+
+.shiptor_widget ._shiptor_widget_points_map {
+  padding: 69px 20px 20px;
+}
+
+@media screen and (max-width: 1400px) {
+  .shiptor_widget {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .shiptor_widget ._shiptor_widget_points_map {
+    padding: 0;
+  }
+  .shiptor_widget ._shiptor_widget_points {
+    /*padding: 0;*/
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .shiptor_widget {
+    height: 350px;
+  }
+  .shiptor_widget ._shiptor_widget_points_confirm {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+
+.form_courier {
+  display: none;
+}
+
+
+.shiptor_selected_pvz__wrap {
+  border: 1px solid #d9360f;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.shiptor_selected_pvz__courier {
+  background: #636674;
+  display: inline;
+  padding: 3px 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.shiptor_selected_pvz__address {
+  border-bottom: 1px solid #636674;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  display: table;
+}
+
+.shiptor_selected_pvz__cost,
+.shiptor_selected_pvz__shipping_days,
+.shiptor_selected_pvz__work_shedule_formatted {
+  color: #636674;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.shiptor_selected_pvz__change {
+  padding: 5px 15px;
+  float: right;
+  margin-top: -45px;
+}
+
+@media screen and (max-width: 1280px) {
+  .shiptor_selected_pvz__cost,
+  .shiptor_selected_pvz__shipping_days,
+  .shiptor_selected_pvz__work_shedule_formatted {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .shiptor_selected_pvz__cost,
+  .shiptor_selected_pvz__shipping_days,
+  .shiptor_selected_pvz__work_shedule_formatted {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .shiptor_selected_pvz__wrap {
+    padding-bottom: 80px;
+  }
+  .shiptor_selected_pvz__change {
+    margin-top: 0.6em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .shiptor_selected_pvz__cost,
+  .shiptor_selected_pvz__shipping_days,
+  .shiptor_selected_pvz__work_shedule_formatted {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .shiptor_selected_pvz__wrap {
+    padding-bottom: 65px;
+  }
+}
+
+.city-data {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  margin-top: -20px;
+  max-height: 400px;
+  overflow: scroll;
+}
+
+.city-data-list {
+  width: 100%;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  background: #111216;
+  border-left: 1px solid #636674;
+  border-right: 1px solid #636674;
+}
+
+.city-data-list__item {
+  padding: 12px 20px;
+  border-bottom: 1px solid #636674;
+  overflow: hidden;
+}
+
+.city-data-list__item:hover {
+  background: #636674;
+  cursor: pointer;
+}
+
+.input-validation {
+  color: #d9360f;
+  position: absolute;
+  top: -5px;
+  left: 30px;
+  font-size: 16px;
+}
+
+.shiptor_widget-validation, .submit-validation {
+  color: #d9360f;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 992px) {
+  .city-data-list__item {
+    font-size: 22px;
+  }
+  .input-validation {
+    top: 0;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .city-data {
+    margin-top: -10px;
+    max-height: 300px;
+  }
+  .input-validation {
+    top: -2px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .city-data-list__item {
+    padding: 8px 10px;
+    font-size: 16px;
+  }
+  .input-validation {
+    top: 2px;
+    font-size: 12px;
+  }
+}
