@@ -1,6 +1,6 @@
 $(document).ready(function () {
-  gtag('event', 'cart', {});
-  url = 'http://api.callofthehunt.com/v1/orders';
+  if (typeof gtag !== 'undefined') gtag('event', 'cart', {});
+  url = 'https://api.callofthehunt.com/v1/orders';
 
   var data = {
     type: "pickup",
@@ -22,7 +22,7 @@ $(document).ready(function () {
   };
 
   const gclidPromise = new Promise(resolve => {
-    gtag('get', 'G-QQ1KK3HS17', 'client_id', resolve)
+    if (typeof gtag !== 'undefined') gtag('get', 'G-QQ1KK3HS17', 'client_id', resolve)
   });
   gclidPromise.then((gclid) => {
     data.ga_client_id = gclid;
@@ -309,7 +309,7 @@ $(document).ready(function () {
         body: JSON.stringify(params)
       }).then(response => response.json())
         .then(result => {
-          gtag('event', 'sendForm', {});
+          if (typeof gtag !== 'undefined') gtag('event', 'sendForm', {});
           window.open(result);
         });
     }
