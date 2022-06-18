@@ -1,6 +1,5 @@
 body {
   background-color: #fefefe;
-  background-image: url(../img/faq.jpg);
 }
 
 .symbols-main {
@@ -27,17 +26,15 @@ body {
 @keyframes bg-wrong {
   50% {
     background-color: #c40000;
-    background-image: url(../img/bgb.png);
   }
 }
 
 @keyframes bg-correct {
   50% {
     background-color: #000000;
-    background-image: url(../img/bgb.png);
   }
 }
- 
+
 .symbols {
   max-width: 45%;
   margin: 0 auto;
@@ -77,7 +74,7 @@ body {
 }
 
 .symbol {
-  background-image: url(../img/symbols.png);
+  background-image: url(../images/symbols.png);
   background-size: 2400%;
   background-repeat: no-repeat;
   cursor: pointer;
