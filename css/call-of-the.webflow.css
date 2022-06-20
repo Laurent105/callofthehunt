@@ -47,8 +47,8 @@
 }
 
 .body.body-final {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#111216), to(rgba(17, 18, 22, 0))), url('./images/bg-3.jpg');
-  background-image: linear-gradient(180deg, #111216, rgba(17, 18, 22, 0)), url('./images/bg-3.jpg');
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#111216), to(rgba(17, 18, 22, 0))), url('/images/bg-3.jpg');
+  background-image: linear-gradient(180deg, #111216, rgba(17, 18, 22, 0)), url('/images/bg-3.jpg');
   background-position: 0px 0px, 50% 50%;
   background-size: auto, cover;
   background-repeat: repeat, no-repeat;
@@ -79,8 +79,8 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(12%, #111216), color-stop(28%, rgba(17, 18, 22, 0)), color-stop(50%, rgba(17, 18, 22, 0)), color-stop(56%, rgba(17, 18, 22, 0)), to(#111216)), url('./images/bg_header.jpg');
-  background-image: linear-gradient(180deg, #111216 12%, rgba(17, 18, 22, 0) 28%, rgba(17, 18, 22, 0) 50%, rgba(17, 18, 22, 0) 56%, #111216), url('./images/bg_header.jpg');
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(12%, #111216), color-stop(28%, rgba(17, 18, 22, 0)), color-stop(50%, rgba(17, 18, 22, 0)), color-stop(56%, rgba(17, 18, 22, 0)), to(#111216)), url('/images/bg_header.jpg');
+  background-image: linear-gradient(180deg, #111216 12%, rgba(17, 18, 22, 0) 28%, rgba(17, 18, 22, 0) 50%, rgba(17, 18, 22, 0) 56%, #111216), url('/images/bg_header.jpg');
   background-position: 0px 0px, 50% 50%;
   background-size: auto, cover;
   background-repeat: repeat, no-repeat;
@@ -92,15 +92,15 @@
 }
 
 .section.section-forest-bg {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#111216), color-stop(36%, rgba(17, 18, 22, 0)), color-stop(73%, rgba(17, 18, 22, 0)), to(#111216)), url('./images/bg-2.jpg');
-  background-image: linear-gradient(180deg, #111216, rgba(17, 18, 22, 0) 36%, rgba(17, 18, 22, 0) 73%, #111216), url('./images/bg-2.jpg');
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#111216), color-stop(36%, rgba(17, 18, 22, 0)), color-stop(73%, rgba(17, 18, 22, 0)), to(#111216)), url('/images/bg-2.jpg');
+  background-image: linear-gradient(180deg, #111216, rgba(17, 18, 22, 0) 36%, rgba(17, 18, 22, 0) 73%, #111216), url('/images/bg-2.jpg');
   background-position: 0px 0px, 50% 100%;
   background-size: auto, cover;
 }
 
 .section.section-forest-bg-bottom {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#111216), color-stop(15%, rgba(17, 18, 22, 0)), color-stop(85%, rgba(17, 18, 22, 0)), to(#111216)), url('./images/bg-3.jpg');
-  background-image: linear-gradient(180deg, #111216, rgba(17, 18, 22, 0) 15%, rgba(17, 18, 22, 0) 85%, #111216), url('./images/bg-3.jpg');
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#111216), color-stop(15%, rgba(17, 18, 22, 0)), color-stop(85%, rgba(17, 18, 22, 0)), to(#111216)), url('/images/bg-3.jpg');
+  background-image: linear-gradient(180deg, #111216, rgba(17, 18, 22, 0) 15%, rgba(17, 18, 22, 0) 85%, #111216), url('/images/bg-3.jpg');
   background-position: 0px 0px, 50% 100%;
   background-size: auto, cover;
 }
@@ -499,14 +499,14 @@
 .dropdown-toggle {
   width: 100%;
   padding: 5px 0px 0px 53px;
-  background-image: url('./images/fropdown-plus.svg');
+  background-image: url('/images/fropdown-plus.svg');
   background-position: 0% 50%;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .dropdown-toggle.w--open {
-  background-image: url('./images/dropdown-minus.svg'), url('./images/dropdown-minus.svg');
+  background-image: url('/images/dropdown-minus.svg'), url('/images/dropdown-minus.svg');
   background-position: 0px 0px, 40px 40px;
   background-size: contain, auto;
   background-repeat: no-repeat, no-repeat;
@@ -1164,16 +1164,16 @@
   }
 
   .section.section-forest-bg {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#111216), color-stop(56%, rgba(10, 10, 12, 0)), color-stop(59%, transparent), to(#111216)), url('./images/bg-2.jpg');
-    background-image: linear-gradient(180deg, #111216, rgba(10, 10, 12, 0) 56%, transparent 59%, #111216), url('./images/bg-2.jpg');
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#111216), color-stop(56%, rgba(10, 10, 12, 0)), color-stop(59%, transparent), to(#111216)), url('/images/bg-2.jpg');
+    background-image: linear-gradient(180deg, #111216, rgba(10, 10, 12, 0) 56%, transparent 59%, #111216), url('/images/bg-2.jpg');
     background-position: 0px 0px, 50% 100%;
     background-size: auto, cover;
     background-repeat: repeat, no-repeat;
   }
 
   .section.section-forest-bg-bottom {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#111216), color-stop(58%, rgba(17, 18, 22, 0)), color-stop(85%, rgba(17, 18, 22, 0)), to(#111216)), url('./images/bg-3.jpg');
-    background-image: linear-gradient(180deg, #111216, rgba(17, 18, 22, 0) 58%, rgba(17, 18, 22, 0) 85%, #111216), url('./images/bg-3.jpg');
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#111216), color-stop(58%, rgba(17, 18, 22, 0)), color-stop(85%, rgba(17, 18, 22, 0)), to(#111216)), url('/images/bg-3.jpg');
+    background-image: linear-gradient(180deg, #111216, rgba(17, 18, 22, 0) 58%, rgba(17, 18, 22, 0) 85%, #111216), url('/images/bg-3.jpg');
     background-position: 0px 0px, 50% 100%;
     background-size: auto, cover;
   }
@@ -1768,8 +1768,8 @@
   }
 
   .section.section-forest-bg-bottom {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 18, 22, 0.6)), to(rgba(17, 18, 22, 0.6))), -webkit-gradient(linear, left top, left bottom, from(#111216), color-stop(15%, rgba(17, 18, 22, 0)), color-stop(85%, rgba(17, 18, 22, 0)), to(#111216)), url('./images/bg-3.jpg');
-    background-image: linear-gradient(180deg, rgba(17, 18, 22, 0.6), rgba(17, 18, 22, 0.6)), linear-gradient(180deg, #111216, rgba(17, 18, 22, 0) 15%, rgba(17, 18, 22, 0) 85%, #111216), url('./images/bg-3.jpg');
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 18, 22, 0.6)), to(rgba(17, 18, 22, 0.6))), -webkit-gradient(linear, left top, left bottom, from(#111216), color-stop(15%, rgba(17, 18, 22, 0)), color-stop(85%, rgba(17, 18, 22, 0)), to(#111216)), url('/images/bg-3.jpg');
+    background-image: linear-gradient(180deg, rgba(17, 18, 22, 0.6), rgba(17, 18, 22, 0.6)), linear-gradient(180deg, #111216, rgba(17, 18, 22, 0) 15%, rgba(17, 18, 22, 0) 85%, #111216), url('/images/bg-3.jpg');
     background-position: 0px 0px, 0px 0px, 50% 100%;
     background-size: auto, auto, cover;
   }
