@@ -2489,3 +2489,12 @@
     font-size: 12px;
   }
 }
+
+.mailing-form-done {
+  display: none;
+  padding: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  color: #d9360e;
+  margin-top: 25px;
+}
