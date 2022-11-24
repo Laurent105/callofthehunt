@@ -1,4 +1,4 @@
-window.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
   [].forEach.call( document.querySelectorAll('.tel'), function(input) {
     var keyCode;
     function mask(event) {
