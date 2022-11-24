@@ -238,6 +238,7 @@ $(document).ready(function () {
   // оформление заказа
   $('.submit-order-form').click(function (e) {
     e.preventDefault();
+
     var params = data;
     params.name = $('#name').val();
     params.phone = $('#Phone').val();
@@ -301,6 +302,8 @@ $(document).ready(function () {
       // отправка на бек
       $('.submit-validation').text("");
 
+      var windowReference = window.open();
+
       fetch(url, {
         method: 'POST',
         headers: {
@@ -310,7 +313,7 @@ $(document).ready(function () {
       }).then(response => response.json())
         .then(result => {
           if (typeof gtag !== 'undefined') gtag('event', 'sendForm', {});
-          window.open(result);
+          windowReference.location = result;
         });
     }
   });
