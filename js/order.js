@@ -312,7 +312,9 @@ $(document).ready(function () {
         body: JSON.stringify(params)
       }).then(response => response.json())
         .then(result => {
+          localStorage.setItem('ordercompleted', 1);
           if (typeof gtag !== 'undefined') gtag('event', 'sendForm', {});
+          if (typeof _tmr !== 'undefined') _tmr.push({ type: "reachGoal", id: 3267947, value: "0", goal: "pay", params: { product_id: "1"}});
           windowReference.location = result;
         });
     }

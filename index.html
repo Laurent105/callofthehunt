@@ -64,7 +64,7 @@
         <a href="#about" class="nav-link w-nav-link">Об игре</a>
         <a href="#inside" class="nav-link w-nav-link">Что внутри</a>
         <a href="./symbols.html" class="nav-link w-nav-link">Сдать результаты</a>
-        <a href="./order.html" class="button button-navbar w-button">Заказать</a>
+        <a href="./order.html" class="button button-navbar w-button btn-go-order">Заказать</a>
       </nav>
     </div>
   </div>
@@ -75,7 +75,7 @@
         <h2 class="h2-hero">Call of the hunt</h2>
         <div class="container-button-hero">
           <a href="#about" class="button button-inline button-inline-right-margin w-button">Об игре</a>
-          <a href="./order.html" class="button w-button">Заказать</a>
+          <a href="./order.html" class="button w-button btn-go-order">Заказать</a>
         </div>
       </div>
       <div class="w-col w-col-6"><img src="images/img-1.png" loading="lazy" width="1201" sizes="(max-width: 991px) 100vw, (max-width: 1279px) 78vw, 79vw" srcset="images/img-1-p-500.png 500w, images/img-1-p-800.png 800w, images/img-1-p-1080.png 1080w, images/img-1-p-1600.png 1600w, images/img-1-p-2000.png 2000w, images/img-1.png 2402w" alt="" class="image-hero"></div>
@@ -95,7 +95,7 @@
      <div class="column w-col w-col-2"></div>
       <div class="column w-col w-col-8">
         <p class="paragraph">Это настоящий квест в коробке: загадочные предметы, письма, фотографии, журналы и даже кодовый замок. Разгадайте все головоломки, найдите спрятанный шифр, чтобы остановить Маньяка!</p>
-        <a href="./order" class="button w-button">Заказать за 1800₽</a>
+        <a href="./order" class="button w-button btn-go-order">Заказать за 1800₽</a>
       </div>
       <div class="column w-col w-col-2"></div>
     </div>
@@ -306,7 +306,7 @@
     <div class="container">
       <h2 class="h2">Продолжение истории</h2>
       <p class="paragraph-large">В каждом эпизоде вас ждет рассказ об одной жертве Маньяка. Но только все 6 игр вместе складываются в единую и законченную историю с неожиданным финалом.</p>
-      <a href="./order.html" class="button w-button">Заказать</a>
+      <a href="./order.html" class="button w-button btn-go-order">Заказать</a>
     </div>
     <div class="row w-row">
       <div class="column w-col w-col-4">
@@ -430,5 +430,13 @@
   <script src="js/webflow.js" type="text/javascript"></script>
   <script src="js/mailing.js" type="text/javascript"></script>
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+  <script>
+    // цели
+    $(document).ready(function() {
+      $('.btn-go-order').click(function () {
+        if (typeof _tmr !== 'undefined') _tmr.push({ type: "reachGoal", id: 3267947, value: "0", goal: "addtocart", params: { product_id: "1"}});
+      });
+    });
+  </script>
 </body>
 </html>
