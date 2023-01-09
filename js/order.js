@@ -1,6 +1,10 @@
 $(document).ready(function () {
   if (typeof gtag !== 'undefined') gtag('event', 'cart', {});
-  url = 'https://api.callofthehunt.com/v1/orders';
+  const url = 'http://api.callofthehunt.com';
+  const urlSend = url + '/v1/orders';
+  const urlCourierCost = url + '/v1/sdek/cost-courier';
+  const urlWidget = url + '/v1/sdek/widget';
+  const urlCityList = 'https://api.cdek.ru/city/getListByTerm/jsonp.php';
 
   var data = {
     type: "pickup",
@@ -8,15 +12,15 @@ $(document).ready(function () {
     ga_client_id: "",
     pickup: {
       cost: 0,
-      kladr_id: "",
-      delivery_point: 0,
-      shipping_method: 0,
+      city_id: "",
+      pickup_id: "",
+      shipping_method: 0, // необязательный
       address: ""
     },
     courier: {
       cost: 0,
-      kladr_id: "",
-      shipping_method: 0,
+      city_id: "",
+      shipping_method: 0, // необязательный, не используется
       address: ""
     }
   };
@@ -28,13 +32,64 @@ $(document).ready(function () {
     data.ga_client_id = gclid;
   });
 
+  // виджет карты пвз для самовывоза
+  var ourWidjet = new ISDEKWidjet ({
+    defaultCity: 'Москва', // auto //какой город отображается по умолчанию
+    cityFrom: 'Москва', // из какого города будет идти доставка
+    country: 'Россия', // можно выбрать страну, для которой отображать список ПВЗ
+    link: 'shiptor_widget_pvz', // id элемента страницы, в который будет вписан виджет
+    hidecash: true,
+    hidedress: true,
+    choose: true,
+    hidedelt: true,
+    // detailAddress: true,
+    // apikey: '',
+    mode: 'all',
+    goods: [{
+      length: 27,
+      width: 27,
+      height: 6,
+      weight: 0.65
+    }],
+    onChoose: onChoose,
+    onCalculate: onCalculate,
+    //path: '/assets/sdek_widget/scripts/', // директория с библиотеками
+    servicepath: urlWidget // ссылка на файл service.php на вашем сайте
+  });
+
+  function onChoose(params) {
+    text = '<div class="shiptor_selected_pvz__wrap">\n' +
+      '                <div class="shiptor_selected_pvz__courier">' + params.id + '</div>\n' +
+      '                <div class="shiptor_selected_pvz__address">г. '+ params.cityName +', '+ params.PVZ.Address +'</div>\n' +
+      '                <div class="shiptor_selected_pvz__cost">'+ params.price +' руб.</div>\n' +
+      '                <div class="shiptor_selected_pvz__shipping_days">'+ params.term +' рабочий день</div>\n' +
+      '                <div class="shiptor_selected_pvz__work_shedule_formatted">'+ params.PVZ.WorkTime +'</div>\n' +
+      '                <div class="shiptor_selected_pvz__change button w-button">изменить</div>\n' +
+      '              </div>';
+    $('.shiptor_selected_pvz').html(text);
+    $('#shiptor_widget_pvz').fadeOut(0);
+
+    data.pickup.pickup_id = params.id;
+    data.pickup.city_id = parseInt(params.city);
+    data.pickup.shipping_method = params.tarif;
+    data.pickup.address = params.PVZ.Address;
+  }
+
+  function onCalculate(params) {
+    cost = Number(params.profiles.pickup.price);
+    $('.cost-delivery').text(cost);
+    if ($('.shiptor_selected_pvz__cost').length) $('.shiptor_selected_pvz__cost').text(cost + ' руб.');
+    data.pickup.cost = cost;
+    cartSum();
+  }
+
   // выбор доставки
   $('.btn-delivery[data-type="1"]').click();
   $('.btn-delivery').click(function () {
     if ($(this).data('type') === 1) {
       // самовывоз
       if (!$('.shiptor_selected_pvz__wrap').length) {
-        window.JCShiptorWidgetPvz.show();
+        $('#shiptor_widget_pvz').fadeIn(0);
       }
       $('.form_courier').fadeOut(0);
       $('.shiptor_selected_pvz').fadeIn(0);
@@ -45,7 +100,7 @@ $(document).ready(function () {
     } else {
       // доставка курьером
       if (!$('.shiptor_selected_pvz__wrap').length) {
-        window.JCShiptorWidgetPvz.hide();
+        $('#shiptor_widget_pvz').fadeOut(0);
       }
       $('.form_courier').fadeIn(0);
       $('.shiptor_selected_pvz').fadeOut(0);
@@ -57,124 +112,74 @@ $(document).ready(function () {
   });
 
   $('body').on('click', '.shiptor_selected_pvz__change', function () {
+    data.pickup.city_id = "";
+    data.pickup.pickup_id = "";
     $('.shiptor_selected_pvz').html("");
-    window.JCShiptorWidgetPvz.show();
-  });
-
-  // выбор пвз
-  var elemShiptorWidget = document. querySelector("#shiptor_widget_pvz");
-  elemShiptorWidget.addEventListener ("onPvzSelect", function(ce) {
-    text = '<div class="shiptor_selected_pvz__wrap">\n' +
-      '                <div class="shiptor_selected_pvz__courier">'+ ce.detail.courier +'</div>\n' +
-      '                <div class="shiptor_selected_pvz__address">'+ ce.detail.address +'</div>\n' +
-      '                <div class="shiptor_selected_pvz__cost">'+ ce.detail.cost +'</div>\n' +
-      '                <div class="shiptor_selected_pvz__shipping_days">'+ ce.detail.shipping_days +'</div>\n' +
-      '                <div class="shiptor_selected_pvz__work_shedule_formatted">'+ ce.detail.work_shedule_formatted +'</div>\n' +
-      '                <div class="shiptor_selected_pvz__change button w-button">изменить</div>\n' +
-      '              </div>';
-    $('.shiptor_selected_pvz').html(text);
-
-    cost = Number(ce.detail.cost.replace(" руб.", ""));
-    $('.cost-delivery').text(cost);
-    cartSum();
-    data.pickup.cost = cost;
-    data.pickup.delivery_point = ce.detail.id;
-    data.pickup.kladr_id = ce.detail.kladr_id;
-    data.pickup.shipping_method = ce.detail.shipping_method;
-    data.pickup.address = ce.detail.address;
-  });
-  elemShiptorWidget.addEventListener ("onGetPvzList", function(ce){
-    $('._shiptor_widget_settlement').val("");
+    $('#shiptor_widget_pvz').fadeIn(0);
   });
 
   // ввод города
   $('#City-2').on('input', function () {
-    data.courier.kladr_id = "";
-
-    let params = {
-      "id": "JsonRpcClient.js",
-      "jsonrpc": "2.0",
-      "method": "suggestSettlement",
-      "params": {
-        "query": $(this).val(),
-        "country_code": "RU"
-      }
+    data.courier = {
+      cost: 0,
+      city_id: "",
+      shipping_method: 0,
+      address: ""
     };
 
-    fetch('https://api.shiptor.ru/public/v1', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json;charset=utf-8'
-      },
-      body: JSON.stringify(params)
-    }).then(response => response.json())
-      .then(result => {
+    let val = $(this).val();
+    $.ajax({
+      url: urlCityList,
+      dataType: "jsonp",
+      data:  {q: val},
+      success: function(result){
         var html = "";
-        result.result.map(function(item) {
-          if (item.type === "город" || item.type === "поселок") {
-            html += '<li class="city-data-list__item" data-kladr="'+ item.kladr_id +'">'+ item.name +', '+ item.readable_parents +'</li>';
-          }
-        });
+        if (result.geonames && result.geonames.length) {
+          result.geonames.map(function(item) {
+            if (item.countryId === "1") {
+              html += '<li class="city-data-list__item" data-id="'+ item.id +'">'+ item.name +'</li>';
+            }
+          });
+        }
         $('.city-data-list').html(html);
-      });
+      }
+    });
   });
   $('body').on('click', '.city-data-list__item', function () {
     $('#City-2').val($(this).text());
     $('.city-data-list').html("");
-    data.courier.kladr_id = String($(this).data('kladr'));
 
+    data.courier.city_id = $(this).data('id');
     getCostCourier(Number($('.h2-quantity').text()));
   });
 
   function getCostCourier(qty) {
     $('.cost-delivery').text(0);
-    if (data.courier.kladr_id) {
-      var a = Math.pow(27*27*6 * qty, 1/3);
-      let params = {
-        "id": "JsonRpcClient.js",
-        "jsonrpc": "2.0",
-        "method": "calculateShipping",
-        "params": {
-          "stock": true,
-          "kladr_id_from": "77000000000",
-          "kladr_id": data.courier.kladr_id,
-          "length": a,
-          "width": a,
-          "height": a,
-          "weight": 0.65 * qty,
-          "cod": 0,
-          "declared_cost": 0,
-          "country_code": "RU"
-        }
-      };
-
-      fetch('https://api.shiptor.ru/public/v1', {
-        method: 'POST',
+    if (data.courier.city_id) {
+      fetch(urlCourierCost + '?qty=' + qty + '&cityId=' + data.courier.city_id, {
+        method: 'GET',
         headers: {
           'Content-Type': 'application/json;charset=utf-8'
-        },
-        body: JSON.stringify(params)
+        }
       }).then(response => response.json())
         .then(result => {
-          var isFind = result.result.methods.some(function(item) {
-            if (item.method.category === "to-door" && item.method.courier === "sber_courier") {
-              data.courier.shipping_method = item.method.id;
-              data.courier.cost = Math.ceil(item.cost.services[0].sum/100)*100;
-              $('.cost-delivery').text(data.courier.cost);
-              cartSum();
-              return true;
-            }
-            return false;
-          });
-          if (!isFind) {
+          if (!result[0]) {
             $('#City-2').parent('div').find('.input-validation').text("доставка невозможна");
           } else {
             $('#City-2').parent('div').find('.input-validation').text("");
+            // data.courier.shipping_method = result[0];
+            data.courier.cost = result[1];
+            $('.cost-delivery').text(result[1]);
+            setTimeout(function () {
+              cartSum();
+            }, 500);
           }
         });
     } else {
       $('.cost-delivery').text(0);
-      cartSum();
+      setTimeout(function () {
+        cartSum();
+      }, 500);
     }
   }
 
@@ -185,7 +190,7 @@ $(document).ready(function () {
       qty--;
       $('.h2-quantity').text(qty);
       $('.cost-items').text(1800 * qty);
-      cartSum();
+      // cartSum();
       if (data.type === "pickup") getCostPvz(qty);
       if (data.type === "courier") getCostCourier(qty);
       data.qty = qty;
@@ -197,7 +202,7 @@ $(document).ready(function () {
       qty++;
       $('.h2-quantity').text(qty);
       $('.cost-items').text(1800 * qty);
-      cartSum();
+      // cartSum();
       if (data.type === "pickup") getCostPvz(qty);
       if (data.type === "courier") getCostCourier(qty);
       data.qty = qty;
@@ -206,27 +211,15 @@ $(document).ready(function () {
 
   // изменение веса и габаритов посылки - обновление стоимости доставки
   function getCostPvz(qty) {
-    data.pickup = {
-      cost: 0,
-      kladr_id: "",
-      delivery_point: 0,
-      shipping_method: 0,
-      address: ""
-    };
-
-    var a = Math.pow(27*27*6 * qty, 1/3);
-    window.JCShiptorWidgetPvz.setParams({
-      weight: 0.65 * qty,
-      dimensions: {
-        length: a,
-        width: a,
-        height: a
-      }
-    });
-    $('.shiptor_selected_pvz__change').click();
-    $('.cost-delivery').text(0);
-    cartSum();
-    window.JCShiptorWidgetPvz.refresh();
+    ourWidjet.cargo.reset();
+    for (i = 0; i < qty; i++) {
+      ourWidjet.cargo.add ({
+        length: 27,
+        width: 27,
+        height: 6,
+        weight: 0.65
+      });
+    }
   }
 
   // пересчет всей корзины
@@ -274,7 +267,7 @@ $(document).ready(function () {
     }
 
     if (params.type === 'courier') {
-      if (params.courier.city && params.courier.shipping_method && params.courier.kladr_id) {
+      if (params.courier.city && params.courier.city_id) {
         $('#City-2').parent('div').find('.input-validation').text("");
       } else {
         $('#City-2').parent('div').find('.input-validation').text("введите город");
@@ -288,7 +281,7 @@ $(document).ready(function () {
         isValide = false;
       }
     } else {
-      if (params.pickup.delivery_point && params.pickup.kladr_id) {
+      if (params.pickup.pickup_id && params.pickup.city_id) {
         $('.shiptor_widget-validation').text("");
       } else {
         $('.shiptor_widget-validation').text("выберите пункт выдачи");
@@ -304,7 +297,7 @@ $(document).ready(function () {
 
       var windowReference = window.open();
 
-      fetch(url, {
+      fetch(urlSend, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json;charset=utf-8'
