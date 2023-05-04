@@ -1,6 +1,6 @@
 $(document).ready(function () {
   if (typeof gtag !== 'undefined') gtag('event', 'cart', {});
-  const url = 'http://api.callofthehunt.com';
+  const url = 'https://api.callofthehunt.com';
   const urlSend = url + '/v1/orders';
   const urlCourierCost = url + '/v1/sdek/cost-courier';
   const urlWidget = url + '/v1/sdek/widget';
