@@ -1,55 +1,47 @@
 $(document).ready(function () {
   var url = 'https://api.callofthehunt.com/v1/mailing';
 
-  function displayValidationError(inputId, message) {
-    const validationElement = $(`#${inputId}`).parent('div').find('.input-validation');
-    validationElement.text(message);
-  }
-
   $("#email-form input[type='submit']").click(function (e) {
     e.preventDefault();
     var name = $('#name').val();
     var email = $('#Email').val();
-    var isValid = true;
 
+    isValide = true;
     if (name) {
-      displayValidationError('name', "");
+      $('#name').parent('div').find('.input-validation').text("");
     } else {
-      displayValidationError('name', "введите имя");
-      isValid = false;
+      $('#name').parent('div').find('.input-validation').text("введите имя");
+      isValide = false;
     }
 
     if (email && /@/.test(email)) {
-      displayValidationError('Email', "");
+      $('#Email').parent('div').find('.input-validation').text("");
     } else {
-      displayValidationError('Email', "введите email");
-      isValid = false;
+      $('#Email').parent('div').find('.input-validation').text("введите email");
+      isValide = false;
     }
 
-    if (!isValid) {
+    if (!isValide) {
       $('.submit-validation').text("не все поля заполнены");
-      return;
+    } else {
+      // отправка на бек
+      $('.submit-validation').text("");
+// console.log(444);
+      fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json;charset=utf-8'
+        },
+        body: JSON.stringify({
+          'email': email,
+          'name': name
+        })
+      }).then(response => response.json())
+        .then(result => {
+          $('#name').val("");
+          $('#Email').val("");
+          $(".mailing-form-done").fadeIn();
+        });
     }
-
-    // отправка на бек
-    $('.submit-validation').text("");
-
-    fetch(url, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json;charset=utf-8'
-      },
-      body: JSON.stringify({
-        'email': email,
-        'name': name
-      })
-    })
-    .then(response => response.json())
-    .then(result => {
-      $('#name').val("");
-      $('#Email').val("");
-      $(".mailing-form-done").fadeIn();
-    })
-    .catch(err => console.log(err));
   });
 });

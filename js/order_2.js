@@ -189,7 +189,7 @@ $(document).ready(function () {
     if (qty > 1) {
       qty--;
       $('.h2-quantity').text(qty);
-      $('.cost-items').text(2000 * qty);
+      $('.cost-items').text(1800 * qty);
       // cartSum();
       if (data.type === "pickup") getCostPvz(qty);
       if (data.type === "courier") getCostCourier(qty);
@@ -201,7 +201,7 @@ $(document).ready(function () {
     if (qty < 1000) {
       qty++;
       $('.h2-quantity').text(qty);
-      $('.cost-items').text(2000 * qty);
+      $('.cost-items').text(1800 * qty);
       // cartSum();
       if (data.type === "pickup") getCostPvz(qty);
       if (data.type === "courier") getCostCourier(qty);
@@ -224,7 +224,7 @@ $(document).ready(function () {
 
   // пересчет всей корзины
   function cartSum() {
-    sum = Number($('.cost-items').text()) - (Number($('.cost-items').text()) * Number($('.cost-discount').text()) / 100) + Number($('.cost-delivery').text());
+    sum = Number($('.cost-items').text()) + Number($('.cost-delivery').text()) + Number($('.cost-discount').text());
     $('.cost-sum').text(sum);
   }
 
